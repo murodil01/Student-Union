@@ -50,10 +50,10 @@ const Question = () => {
       <div className="max-w-[1220px] mx-auto px-4 flex flex-col lg:flex-row gap-10">
         {/* Left side */}
         <div className="flex-1">
-          <h3 className="text-4xl md:text-6xl font-bold text-[#323232] leading-tight">
+          <h3 className="text-4xl md:text-6xl font-bold  leading-tight">
             Ko'p beriladigan savollar
           </h3>
-          <p className="text-lg md:text-xl text-[#323232] mt-5 leading-relaxed">
+          <p className="text-lg md:text-xl  mt-5 leading-relaxed">
             "Biz bilan birga o'zingizni rivojlantiring – bu yerda bilim, ijod va
             imkoniyatlar birlashadi."
           </p>
@@ -98,15 +98,13 @@ const Question = () => {
                   ref={(el) => (faqRefs.current[idx] = el)}
                   className={`flex-1 cursor-pointer border rounded-lg p-4 transition-all duration-300 mb-4 ${
                     openIndex === idx
-                      ? "border-[#FFB21A] bg-white shadow-md"
-                      : "border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-white"
+                      ? "border-[#FFB21A] shadow-md"
+                      : "border-gray-200"
                   }`}
                   onClick={() => toggleFAQ(idx)}
                 >
                   <div className="flex items-center justify-between">
-                    <h4 className="text-lg font-medium text-[#323232] pr-4">
-                      {faq.question}
-                    </h4>
+                    <h4 className="text-lg font-medium pr-4">{faq.question}</h4>
                     <div
                       className={`transform transition-transform duration-300 ${
                         openIndex === idx ? "rotate-45" : "rotate-0"
@@ -135,9 +133,7 @@ const Question = () => {
                         : "max-h-0 opacity-0 mt-0"
                     }`}
                   >
-                    <p className="text-base text-gray-600 leading-relaxed">
-                      {faq.answer}
-                    </p>
+                    <p className="text-base  leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </div>

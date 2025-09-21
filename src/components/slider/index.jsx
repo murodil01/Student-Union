@@ -78,10 +78,10 @@ const Slider = () => {
 
   return (
     <div className="max-w-[1220px] mx-auto px-4 py-[80px] text-center">
-      <h3 className="text-4xl md:text-[60px] text-[#323232] font-bold">
+      <h3 className="text-4xl md:text-[60px]  font-bold">
         Bizning Klublarimiz
       </h3>
-      <p className="text-base md:text-[20px] font-normal text-[#323232] max-w-[540px] my-[15px] mx-auto text-center">
+      <p className="text-base md:text-[20px] font-normal  max-w-[540px] my-[15px] mx-auto text-center">
         "Biz bilan birga o'zingizni rivojlantiring – bu yerda bilim, ijod va
         imkoniyatlar birlashadi."
       </p>
@@ -107,10 +107,10 @@ const Slider = () => {
                   className="w-full h-[262px] object-cover rounded-[7px]"
                 />
                 <div className="flex flex-col flex-1">
-                  <h3 className="text-[24px] text-[#323232] font-[400] mt-[24px]">
+                  <h3 className="text-[24px]  font-[400] mt-[24px]">
                     {item.title}
                   </h3>
-                  <p className="text-[#323232] text-[18px] font-[400] mt-[8px] flex-1">
+                  <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
                   <button className="mt-[16px] px-6 py-[12px] bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[400] rounded-[24px] hover:bg-[#FFB21A] transition cursor-pointer w-full">

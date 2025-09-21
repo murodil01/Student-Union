@@ -35,10 +35,10 @@ const ParticipateHero = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center p-8 border border-[#EFEFEF] rounded-[7px]">
         {/* Form Section */}
         <div className="p-8 ">
-          <h3 className="text-3xl font-bold text-gray-900 mb-2">
+          <h3 className="text-3xl font-bold  mb-2">
             A'zolik va Faollik
           </h3>
-          <p className="text-gray-600 mb-8">
+          <p className=" mb-8">
             Har qanday savol va takliflaringiz uchun ochiqmiz.
             <br />
             Biz bilan bog'lanish va birga ishga yachim topamiz.
@@ -147,7 +147,7 @@ const ParticipateHero = () => {
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-[#FFB21A] hover:bg-orange-600 text-[#0D0D0D] font-semibold py-3 px-6 rounded-[32px] transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="w-full bg-[#FFB21A] hover:bg-orange-600  font-semibold py-3 px-6 rounded-[32px] transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               Yuborish
             </button>

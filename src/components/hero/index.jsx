@@ -9,17 +9,17 @@ const Hero = () => {
       }}
     >
       <div className="max-w-[1220px] mt-[50px] mx-auto pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[24px]">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#323232] leading-snug">
+        <h1 className="text-3xl md:text-5xl font-bold  leading-snug">
           TATU Talabalar Ittifoqi - <br /> Tashabbus, Ijod Va Imkoniyatlar{" "}
           <br />
           Markazi.
         </h1>
 
-        <p className="text-base md:text-lg font-normal text-[#323232] max-w-2xl">
+        <p className="text-base md:text-lg font-normal  max-w-2xl">
           TATU Talabalar Ittifoqi – tashabbus, ijod va imkoniyatlar markazi.
         </p>
 
-        <button className="text-[16px] font-medium text-[#323232] max-w-[180px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+        <button className="text-[16px] font-medium  max-w-[180px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
           Qo’shilish
         </button>
 

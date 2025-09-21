@@ -1,11 +1,11 @@
 const Vacation = () => {
   return (
     <div className="max-w-[1220px] mx-auto px-4 py-[80px] text-center">
-      <h3 className="text-3xl md:text-5xl font-bold text-[#323232] leading-snug">
+      <h3 className="text-3xl md:text-5xl font-bold  leading-snug">
         Tadbirlar va Sayohatlar
       </h3>
 
-      <p className="text-base md:text-lg font-normal text-[#323232] max-w-[470px] mx-auto my-4">
+      <p className="text-base md:text-lg font-normal  max-w-[470px] mx-auto my-4">
         “Biz bilan birga o‘zingizni rivojlantiring – bu yerda bilim, ijod va
         imkoniyatlar birlashadi..
       </p>
