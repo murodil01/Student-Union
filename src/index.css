@@ -44,3 +44,8 @@ html.dark .footer-top {
 html.dark .footer-bottom {
   background-color: #533C01;
 }
+
+html.dark .boglan {
+  background-color: #FFB21A;
+  border-color: #FFB21A;
+}

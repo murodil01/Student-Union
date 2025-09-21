@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
+  const [hasShadow, setHasShadow] = useState(false);
 
   // Dark mode initialization
   useEffect(() => {
@@ -35,10 +36,27 @@ const Navbar = () => {
     }
   };
 
+  // Scroll listener (shadow uchun)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHasShadow(true);
+      } else {
+        setHasShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      {/* Navbar (fixed) */}
-      <div className="fixed top-0 left-0 right-0 bg-[#F9F9FD] navbar  z-50">
+      <div
+        className={`fixed top-0 left-0 right-0 bg-[#F9F9FD] navbar z-50 transition-shadow duration-300 ${
+          hasShadow ? "shadow-md" : ""
+        }`}
+      >
         <div className="max-w-[1220px] mx-auto px-4 py-[20px] flex md:flex-row items-center justify-between gap-6 relative">
           {/* Logo */}
           <a href="/">
@@ -106,7 +124,7 @@ const Navbar = () => {
               {/* Button (desktop only) */}
               <Link
                 to={"/participate"}
-                className="hidden md:block text-[14px] md:text-[16px] text-[#323232] font-normal py-[8px] md:py-[12px] px-[30px] md:px-[50px] rounded-[24px] bg-[#F7F7F7] border border-[#EFEFEF]"
+                className="hidden md:block text-[14px] md:text-[16px]  font-normal py-[8px] md:py-[12px] px-[30px] md:px-[50px] rounded-[24px] boglan bg-[#F7F7F7] border border-[#EFEFEF]"
               >
                 Bog'lanish
               </Link>
@@ -164,7 +182,7 @@ const Navbar = () => {
             </ul>
             <Link
               to={"/participate"}
-              className="text-[16px] text-[#323232] font-normal py-[12px] px-[50px] rounded-[24px] bg-[#F7F7F7] border border-[#EFEFEF]"
+              className="text-[16px] boglan font-normal py-[12px] px-[50px] rounded-[24px] bg-[#F7F7F7] border border-[#EFEFEF]"
             >
               Bog'lanish
             </Link>
