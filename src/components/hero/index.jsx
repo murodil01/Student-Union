@@ -1,0 +1,42 @@
+import hero_bg from "../../assets/hero_bg.png";
+
+const Hero = () => {
+  return (
+    <div
+      className="relative bg-no-repeat bg-center bg-contain min-h-screen"
+      style={{
+        backgroundImage: `url(${hero_bg})`,
+      }}
+    >
+      <div className="max-w-[1220px] mt-[50px] mx-auto pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[24px]">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#323232] leading-snug">
+          TATU Talabalar Ittifoqi - <br /> Tashabbus, Ijod Va Imkoniyatlar{" "}
+          <br />
+          Markazi.
+        </h1>
+
+        <p className="text-base md:text-lg font-normal text-[#323232] max-w-2xl">
+          TATU Talabalar Ittifoqi – tashabbus, ijod va imkoniyatlar markazi.
+        </p>
+
+        <button className="text-[16px] font-medium text-[#323232] max-w-[180px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+          Qo’shilish
+        </button>
+
+        {/* Responsive YouTube video */}
+        <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] aspect-video rounded-[16px] overflow-hidden shadow-lg">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/dC8yyyDbPaI?autoplay=1&mute=1&loop=1&playlist=dC8yyyDbPaI&controls=1&modestbranding=1&rel=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="autoplay; encrypted-media; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

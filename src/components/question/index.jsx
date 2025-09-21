@@ -1,0 +1,152 @@
+import { useState, useRef } from "react";
+
+const faqs = [
+  {
+    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    answer:
+      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+  },
+  {
+    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    answer:
+      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+  },
+  {
+    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    answer:
+      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+  },
+  {
+    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    answer:
+      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+  },
+  {
+    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    answer:
+      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+  },
+  {
+    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    answer:
+      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+  },
+];
+
+const Question = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+  const faqRefs = useRef([]);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const handleStepClick = (index) => {
+    setOpenIndex(index);
+  };
+
+  return (
+    <div className=" py-16">
+      <div className="max-w-[1220px] mx-auto px-4 flex flex-col lg:flex-row gap-10">
+        {/* Left side */}
+        <div className="flex-1">
+          <h3 className="text-4xl md:text-6xl font-bold text-[#323232] leading-tight">
+            Ko'p beriladigan savollar
+          </h3>
+          <p className="text-lg md:text-xl text-[#323232] mt-5 leading-relaxed">
+            "Biz bilan birga o'zingizni rivojlantiring – bu yerda bilim, ijod va
+            imkoniyatlar birlashadi."
+          </p>
+        </div>
+
+        {/* Right side */}
+        <div className="flex-1">
+          {/* FAQ content with steps */}
+          <div className="flex flex-col">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="flex gap-4 items-start relative">
+                {/* Step number with line */}
+                <div className="flex flex-col items-center flex-shrink-0">
+                  <div
+                    className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm cursor-pointer transition-all duration-300 z-10 ${
+                      openIndex === idx
+                        ? "bg-[#FFB21A] text-white scale-110 shadow-lg"
+                        : "bg-gray-200 text-gray-600 hover:bg-[#FFB21A] hover:text-white"
+                    }`}
+                    onClick={() => handleStepClick(idx)}
+                  >
+                    {idx + 1}
+                  </div>
+
+                  {/* Line */}
+                  {idx !== faqs.length - 1 && (
+                    <div
+                      className={`w-0.5 transition-all duration-300 ${
+                        openIndex === idx || openIndex === idx + 1
+                          ? "bg-[#FFB21A]"
+                          : "bg-gray-300"
+                      }`}
+                      style={{
+                        height: "80px",
+                      }}
+                    ></div>
+                  )}
+                </div>
+
+                {/* FAQ item */}
+                <div
+                  ref={(el) => (faqRefs.current[idx] = el)}
+                  className={`flex-1 cursor-pointer border rounded-lg p-4 transition-all duration-300 mb-4 ${
+                    openIndex === idx
+                      ? "border-[#FFB21A] bg-white shadow-md"
+                      : "border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-white"
+                  }`}
+                  onClick={() => toggleFAQ(idx)}
+                >
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-lg font-medium text-[#323232] pr-4">
+                      {faq.question}
+                    </h4>
+                    <div
+                      className={`transform transition-transform duration-300 ${
+                        openIndex === idx ? "rotate-45" : "rotate-0"
+                      }`}
+                    >
+                      <svg
+                        className="w-6 h-6 text-[#FFB21A]"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                      openIndex === idx
+                        ? "max-h-96 opacity-100 mt-3"
+                        : "max-h-0 opacity-0 mt-0"
+                    }`}
+                  >
+                    <p className="text-base text-gray-600 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Question;
