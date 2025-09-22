@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import logo from "../../assets/logo.svg";
 import locationn from "../../assets/locationn.svg";
 import { FaPhone } from "react-icons/fa6";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, Moon, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { PiSunDimFill } from "react-icons/pi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,36 +55,38 @@ const Navbar = () => {
 
   // Debug va scroll function
   const scrollToSection = (sectionId) => {
-    console.log('Scrolling to:', sectionId); // Debug uchun
-    
+    console.log("Scrolling to:", sectionId); // Debug uchun
+
     const scrollToElement = () => {
       const element = document.getElementById(sectionId);
-      console.log('Element found:', element); // Debug uchun
-      
+      console.log("Element found:", element); // Debug uchun
+
       if (element) {
         const navbarHeight = 100;
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-        
-        console.log('Scrolling to position:', offsetPosition); // Debug uchun
-        
+        const offsetPosition =
+          elementPosition + window.pageYOffset - navbarHeight;
+
+        console.log("Scrolling to position:", offsetPosition); // Debug uchun
+
         window.scrollTo({
           top: offsetPosition,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       } else {
-        console.log('Element not found with id:', sectionId);
+        console.log("Element not found with id:", sectionId);
         // Elementni topshirish uchun yana bir urinish
         setTimeout(() => {
           const retryElement = document.getElementById(sectionId);
           if (retryElement) {
             const navbarHeight = 100;
             const elementPosition = retryElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-            
+            const offsetPosition =
+              elementPosition + window.pageYOffset - navbarHeight;
+
             window.scrollTo({
               top: offsetPosition,
-              behavior: "smooth"
+              behavior: "smooth",
             });
           }
         }, 500);
@@ -97,7 +100,7 @@ const Navbar = () => {
     } else {
       scrollToElement();
     }
-    
+
     setIsOpen(false); // mobile menu yopish
   };
 
@@ -158,7 +161,7 @@ const Navbar = () => {
                   {isDark ? (
                     <Moon className="w-4 h-4 text-blue-300" />
                   ) : (
-                    <Sun className="w-4 h-4 text-white drop-shadow-sm" />
+                    <PiSunDimFill className="w-4 h-4 text-white drop-shadow-sm" />
                   )}
                 </div>
 
@@ -202,7 +205,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('about')}
+                    onClick={() => scrollToSection("about")}
                     className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Biz haqimizda
@@ -210,7 +213,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('service')}
+                    onClick={() => scrollToSection("service")}
                     className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Xizmatlar
@@ -218,7 +221,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('projects')}
+                    onClick={() => scrollToSection("projects")}
                     className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Proyektlar
@@ -226,7 +229,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection('faq')}
+                    onClick={() => scrollToSection("faq")}
                     className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Faq
@@ -252,7 +255,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('about')}
+                  onClick={() => scrollToSection("about")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
                   Biz haqimizda
@@ -260,7 +263,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('service')}
+                  onClick={() => scrollToSection("service")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
                   Xizmatlar
@@ -268,7 +271,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('projects')}
+                  onClick={() => scrollToSection("projects")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
                   Proyektlar
@@ -276,7 +279,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('faq')}
+                  onClick={() => scrollToSection("faq")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
                   Faq
@@ -299,5 +302,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
