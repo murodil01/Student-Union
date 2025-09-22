@@ -413,11 +413,11 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 right-0 bg-[#F9F9FD] navbar z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 py-[25px] bg-[#F9F9FD] navbar z-50 transition-all duration-300 ${
           hasShadow ? "shadow-md" : ""
         } ${isScrolled ? "py-2" : ""}`} // padding kamayadi scroll bo'lganda
       >
-        <div className="max-w-[1220px] mx-auto py-[25px] px-4 flex md:flex-row items-center justify-between gap-6 relative">
+        <div className="max-w-[1220px] mx-auto  px-4 flex md:flex-row items-center justify-between gap-6 relative">
           {/* Logo */}
           <Link to="/">
             <img

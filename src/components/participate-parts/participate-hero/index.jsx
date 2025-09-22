@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import boglanish from "../../../assets/boglanish.png"
 const ParticipateHero = () => {
   const [formData, setFormData] = useState({
     ism: "",
@@ -147,7 +147,7 @@ const ParticipateHero = () => {
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-[#FFB21A] hover:bg-orange-600  font-semibold py-3 px-6 rounded-[32px] transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="w-full bg-[#FFB21A]  font-semibold py-3 px-6 rounded-[32px] transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               Yuborish
             </button>
@@ -158,11 +158,10 @@ const ParticipateHero = () => {
         <div className="relative">
           <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src={boglanish}
               alt="Hands holding smartphone"
-              className="w-full h-full object-cover opacity-80"
+              className="w-full h-full object-cover "
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
 
           {/* Floating elements for visual interest */}
