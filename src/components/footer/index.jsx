@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <>
       <div className="bg-white footer-top">
-        <div className="max-w-[1220px]  mx-auto px-4 py-[80px] flex flex-col lg:flex-row gap-x-94 gap-y-10 items-start justify-between">
+        <div className="max-w-[1220px]  mx-auto px-4 py-[80px] flex flex-col lg:flex-row gap-x-55 gap-y-10 items-start justify-between">
           {/* Logo & Contact */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 max-w-[300px] w-full">
             <img
               className="w-[100px] sm:w-[120px] md:w-[132px] lg:w-[150px] h-auto object-contain"
               src={logo}
