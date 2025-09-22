@@ -56,7 +56,7 @@ const About = () => {
             Toshkent Axborot Texnologiyalari Universiteti Talabalar Ittifoqi —
             bu barcha talabalarning yagona markazi.
           </h3>
-          <button className="text-[16px] md:mx-0 mx-auto flex items-center gap-5 font-medium max-w-[255px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+          <button className="text-[clamp(12px,2vw,16px)] md:mx-0 mx-auto flex items-center gap-5 font-medium max-w-[255px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
             Konstitutsiyani o‘qish <MoveRight size={20} />
           </button>
         </div>

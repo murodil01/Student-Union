@@ -17,7 +17,7 @@ const Hero = () => {
           TATU Talabalar Ittifoqi – tashabbus, ijod va imkoniyatlar markazi.
         </p>
 
-        <button className="text-[16px] font-medium  max-w-[180px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+        <button className="text-[16px] font-medium  max-w-[200px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
           A’zo bo’lish
         </button>
 

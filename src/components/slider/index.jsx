@@ -115,7 +115,7 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  <button className="mt-[16px] px-6 py-[12px] bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[400] rounded-[24px] hover:bg-[#FFB21A] transition cursor-pointer w-full">
+                  <button className="mt-[16px] px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[400] rounded-[24px] hover:bg-[#FFB21A] transition cursor-pointer w-full">
                     {item.btn}
                   </button>
                 </div>

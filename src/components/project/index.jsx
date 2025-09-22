@@ -19,7 +19,7 @@ const Project = () => {
               “Biz bilan birga o‘zgarishni rejalashtiring – bu yerda <br />
               bilim, g‘oya va imkoniyatlar birlashadi.”
             </p>
-            <button className="bg-[#FFB21A] w-full sm:w-auto  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[400]">
+            <button className="bg-[#FFB21A] w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[400]">
               Batafsil
             </button>
           </div>
@@ -42,7 +42,7 @@ const Project = () => {
               etadi: suv bo‘yida sokinlik, shaharda esa qulaylik va
               imkoniyatlar.
             </p>
-            <button className="bg-[#FFB21A]  text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
+            <button className="bg-[#FFB21A] max-w-[250px] w-full text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
               Batafsil
             </button>
           </div>
@@ -63,7 +63,7 @@ const Project = () => {
               binolar loyihalarini ko‘rsatish, arxitektorlarni tanlash imkonini
               ham berishadi
             </p>
-            <button className="bg-[#FFB21A]  text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
+            <button className="bg-[#FFB21A] max-w-[250px] w-full  text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
               Batafsil
             </button>
           </div>
@@ -84,7 +84,7 @@ const Project = () => {
               o‘rinlari muntazam yangilanadi: ofis lavozimlaridan tortib,
               masofaviy ishlar yoki oddiy ishchi kasblarigacha.
             </p>
-            <button className="bg-[#FFB21A]  text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
+            <button className="bg-[#FFB21A] max-w-[250px] w-full text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
               Batafsil
             </button>
           </div>

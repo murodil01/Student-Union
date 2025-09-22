@@ -310,6 +310,7 @@ import { FaPhone } from "react-icons/fa6";
 import { Menu, Moon, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { PiSunDimFill } from "react-icons/pi";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -470,13 +471,13 @@ const Navbar = () => {
                   className={`absolute top-1 left-1 w-7 h-7 rounded-full shadow-lg backdrop-blur-md flex items-center justify-center transform transition-all duration-500 ${
                     isDark
                       ? "translate-x-7 bg-gradient-to-br from-gray-900 to-black"
-                      : "translate-x-0 bg-gradient-to-br from-yellow-300 to-orange-900"
+                      : "translate-x-0 bg-[#FFB21A]"
                   }`}
                 >
                   {isDark ? (
-                    <Moon className="w-4 h-4 text-blue-300" />
+                    <Moon className="w-5 h-5 text-blue-300" />
                   ) : (
-                    <PiSunDimFill className="w-4 h-4 text-white drop-shadow-sm" />
+                    <MdOutlineWbSunny className="w-5 h-5 text-white " />
                   )}
                 </div>
                 <div
