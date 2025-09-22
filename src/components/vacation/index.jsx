@@ -1,3 +1,12 @@
+import vacation1 from "../../assets/vacation/vacation1.png";
+import vacation2 from "../../assets/vacation/vacation2.png";
+import vacation3 from "../../assets/vacation/vacation3.png";
+import vacation4 from "../../assets/vacation/vacation4.png";
+import vacation5 from "../../assets/vacation/vacation5.png";
+import vacation6 from "../../assets/vacation/vacation6.png";
+import vacation7 from "../../assets/vacation/vacation7.png";
+import vacation8 from "../../assets/vacation/vacation8.png";
+
 const Vacation = () => {
   return (
     <div className="max-w-[1220px] mx-auto px-4 py-[80px] text-center">
@@ -13,44 +22,44 @@ const Vacation = () => {
       {/* Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8">
         <img
-          src="https://avatars.mds.yandex.net/i?id=9f2dbe3a4a5905ce4971ce62053ae2951077331d-12608033-images-thumbs&n=13"
+          src={vacation1}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://avatars.mds.yandex.net/i?id=b31bdfbe74a1bdc5b4ca6dc13c509d94737c9e79-12716743-images-thumbs&n=13"
+          src={vacation2}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://i.pinimg.com/originals/c6/4d/ef/c64defa4de648b461456e1c06fdc4e18.jpg"
+          src={vacation3}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://i.pinimg.com/originals/c6/4d/ef/c64defa4de648b461456e1c06fdc4e18.jpg"
+          src={vacation4}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://wallpapers.com/images/hd/beach-scenes-desktop-wl184s6x0w5dmkwj.jpg"
+          src={vacation5}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://wallpapers.com/images/hd/pretty-beach-2500-x-1562-iqfn2e9s0ktbyb2t.jpg"
+          src={vacation6}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://i.pinimg.com/736x/c8/55/9b/c8559b9ad29cb437141ddb3045db6e23.jpg"
+          src={vacation7}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
         <img
-          src="https://i.pinimg.com/originals/2f/5b/fa/2f5bfa5b2ad5285ec974c77ad9150d91.jpg"
+          src={vacation8}
           alt="Image"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-[260px] object-cover "
         />
       </div>
     </div>

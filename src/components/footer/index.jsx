@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-white footer-top">
-        <div className="max-w-[1220px]  mx-auto px-4 py-[80px] flex flex-col lg:flex-row gap-10 lg:gap-0 items-start justify-between">
+        <div className="max-w-[1220px]  mx-auto px-4 py-[80px] flex flex-col lg:flex-row gap-x-94 gap-y-10 items-start justify-between">
           {/* Logo & Contact */}
           <div className="flex flex-col gap-4">
             <img
@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Links */}
           <div className="flex flex-col md:flex-row md:flex-nowrap gap-8 md:gap-[40px] lg:gap-[70px] w-full">
             {/* Home Links */}
-            <div className="flex flex-col gap-2 text-left flex-1 min-w-[150px]">
+            <div className="flex flex-col gap-2 text-left ">
               <h3 className=" text-[18px] font-[700]">Home</h3>
               <a className=" text-[16px]" href="#">
                 Biz haqimizda
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
 
             {/* About Links */}
-            <div className="flex flex-col gap-2 text-left flex-1 min-w-[150px]">
+            <div className="flex flex-col gap-2 text-left ">
               <h3 className=" text-[18px] font-[700]">Biz haqimizda</h3>
               <a className=" text-[16px]" href="#">
                 A’zo bo’lish
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             {/* Social Icons */}
-            <div className="flex flex-col gap-4 text-left flex-1 min-w-[150px]">
+            <div className="flex flex-col gap-4 text-left ">
               <h3 className=" text-[18px] font-[700]">Ijtimoiy tarmoqlar</h3>
               <div className="flex gap-3 flex-wrap">
                 <a

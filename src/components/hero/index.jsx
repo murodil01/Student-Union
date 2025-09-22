@@ -9,10 +9,8 @@ const Hero = () => {
       }}
     >
       <div className="max-w-[1220px] mt-[50px] mx-auto pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[24px]">
-        <h1 className="text-3xl md:text-5xl font-bold  leading-snug">
-          TATU Talabalar Ittifoqi - <br /> Tashabbus, Ijod Va Imkoniyatlar{" "}
-          <br />
-          Markazi.
+        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold  leading-snug">
+          Talabalarning ovozi, kelajakning yo‘lboshchisi.
         </h1>
 
         <p className="text-base md:text-lg font-normal  max-w-2xl">
@@ -20,11 +18,11 @@ const Hero = () => {
         </p>
 
         <button className="text-[16px] font-medium  max-w-[180px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
-          Qo’shilish
+          A’zo bo’lish
         </button>
 
         {/* Responsive YouTube video */}
-        <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] aspect-video rounded-[16px] overflow-hidden shadow-lg">
+        <div className="mt-10 w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] aspect-video rounded-[16px] overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/dC8yyyDbPaI?autoplay=1&mute=1&loop=1&playlist=dC8yyyDbPaI&controls=1&modestbranding=1&rel=0"

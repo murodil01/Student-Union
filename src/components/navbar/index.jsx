@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.svg";
-import location from "../../assets/location.svg";
+import locationn from "../../assets/locationn.svg";
 import { FaPhone } from "react-icons/fa6";
 import { Menu, Moon, Sun, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const [hasShadow, setHasShadow] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Dark mode initialization
   useEffect(() => {
@@ -50,6 +52,55 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Debug va scroll function
+  const scrollToSection = (sectionId) => {
+    console.log('Scrolling to:', sectionId); // Debug uchun
+    
+    const scrollToElement = () => {
+      const element = document.getElementById(sectionId);
+      console.log('Element found:', element); // Debug uchun
+      
+      if (element) {
+        const navbarHeight = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        
+        console.log('Scrolling to position:', offsetPosition); // Debug uchun
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      } else {
+        console.log('Element not found with id:', sectionId);
+        // Elementni topshirish uchun yana bir urinish
+        setTimeout(() => {
+          const retryElement = document.getElementById(sectionId);
+          if (retryElement) {
+            const navbarHeight = 100;
+            const elementPosition = retryElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth"
+            });
+          }
+        }, 500);
+      }
+    };
+
+    // Agar boshqa sahifada bo'lsak, avval home ga boramiz
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToElement, 300);
+    } else {
+      scrollToElement();
+    }
+    
+    setIsOpen(false); // mobile menu yopish
+  };
+
   return (
     <>
       <div
@@ -59,13 +110,13 @@ const Navbar = () => {
       >
         <div className="max-w-[1220px] mx-auto px-4 py-[20px] flex md:flex-row items-center justify-between gap-6 relative">
           {/* Logo */}
-          <a href="/">
+          <Link to="/">
             <img
               src={logo}
               alt="Logo"
               className="w-[100px] sm:w-[120px] md:w-[132px] lg:w-[150px] h-auto object-contain"
             />
-          </a>
+          </Link>
 
           {/* Right Side */}
           <div className="flex flex-col gap-[32px] w-full md:w-auto">
@@ -85,7 +136,7 @@ const Navbar = () => {
 
               {/* Location */}
               <img
-                src={location}
+                src={locationn}
                 alt="Location"
                 className="w-[30px] md:w-[40px] h-auto"
               />
@@ -141,20 +192,46 @@ const Navbar = () => {
             {/* Navbar Menu (desktop) */}
             <div className="hidden md:block">
               <ul className="flex flex-wrap items-center justify-center md:justify-start gap-[20px] md:gap-[40px]">
-                {[
-                  "Asosiy",
-                  "Biz haqimizda",
-                  "Xizmatlar",
-                  "Proyektlar",
-                  "Faq",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="cursor-pointer  text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A]"
+                <li>
+                  <Link
+                    to="/"
+                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200"
                   >
-                    {item}
-                  </li>
-                ))}
+                    Asosiy
+                  </Link>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection('about')}
+                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Biz haqimizda
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection('service')}
+                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Xizmatlar
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection('projects')}
+                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Proyektlar
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection('faq')}
+                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Faq
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
@@ -164,24 +241,52 @@ const Navbar = () => {
         {isOpen && (
           <div className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8">
             <ul className="flex flex-col items-center gap-6">
-              {[
-                "Asosiy",
-                "Biz haqimizda",
-                "Xizmatlar",
-                "Proyektlar",
-                "Faq",
-              ].map((item, i) => (
-                <li
-                  key={i}
-                  className="cursor-pointer text-[#323232] text-[22px] font-normal hover:font-[700]"
+              <li>
+                <Link
+                  to="/"
                   onClick={() => setIsOpen(false)}
+                  className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200"
                 >
-                  {item}
-                </li>
-              ))}
+                  Asosiy
+                </Link>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
+                >
+                  Biz haqimizda
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('service')}
+                  className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
+                >
+                  Xizmatlar
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('projects')}
+                  className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
+                >
+                  Proyektlar
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('faq')}
+                  className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
+                >
+                  Faq
+                </button>
+              </li>
             </ul>
+
             <Link
               to={"/participate"}
+              onClick={() => setIsOpen(false)}
               className="text-[16px] boglan font-normal py-[12px] px-[50px] rounded-[24px] bg-[#F7F7F7] border border-[#EFEFEF]"
             >
               Bog'lanish
@@ -194,3 +299,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

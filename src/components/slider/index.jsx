@@ -1,5 +1,8 @@
 import { useState, useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Minus } from "lucide-react";
+import slider1 from "../../assets/slider1.png";
+import slider2 from "../../assets/slider2.png";
+import slider3 from "../../assets/slider3.png";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,19 +11,19 @@ const Slider = () => {
 
   const slides = [
     {
-      img: "https://picsum.photos/400/300?random=1",
+      img: slider1,
       title: "Sport klubi",
       desc: "Sog'lom turmush tarzini targ'ib etuvchi klub, va sport musobaqalari orqali birlashtiradi.",
       btn: "Qo'shilish",
     },
     {
-      img: "https://picsum.photos/400/300?random=2",
+      img: slider2,
       title: "Robototexnika klubi",
       desc: "Texnologiya, dasturlash kodlash va innovatsiyalarni sevuvchilar uchun ijodiy klub.",
       btn: "Qo'shilish",
     },
     {
-      img: "https://picsum.photos/400/300?random=3",
+      img: slider3,
       title: "Sayohat klubi",
       desc: "Dunyo va mamlakatimizning go'zal maskanlarini birgalikda kashf etish uchun tashkil etilgan klub.",
       btn: "Qo'shilish",
@@ -72,12 +75,11 @@ const Slider = () => {
     setCurrentSlide((prev) => (prev <= 0 ? maxSlides : prev - 1));
   };
 
-  const goToSlide = (index) => {
-    setCurrentSlide(Math.min(index, maxSlides));
-  };
-
   return (
-    <div className="max-w-[1220px] mx-auto px-4 py-[80px] text-center">
+    <div
+      id="service"
+      className="max-w-[1220px] mx-auto px-4 py-[100px] text-center"
+    >
       <h3 className="text-4xl md:text-[60px]  font-bold">
         Bizning Klublarimiz
       </h3>
@@ -125,22 +127,12 @@ const Slider = () => {
 
       {/* Bottom controls */}
       <div className="flex justify-between items-center mt-8">
-        {/* Pagination dots (chap tomonda) */}
-        <div className="flex gap-2">
-          {Array.from({ length: maxSlides + 1 }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                currentSlide === index
-                  ? "bg-[#FFB21A] scale-110"
-                  : "bg-gray-300 hover:bg-gray-400"
-              }`}
-            />
-          ))}
+        {/* Pagination raqam (chap tomonda) */}
+        <div className="text-[16px] flex items-center gap-2 font-medium text-gray-700">
+          {currentSlide + 1} <Minus /> {slides.length}
         </div>
 
-        {/* Prev / Next (o'ng tomonda) */}
+        {/* Prev / Next (o‘ng tomonda) */}
         <div className="flex gap-4">
           <button
             onClick={prev}

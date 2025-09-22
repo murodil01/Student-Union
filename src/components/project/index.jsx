@@ -1,6 +1,10 @@
+import project1 from "../../assets/project1.png";
+import project2 from "../../assets/project2.png";
+import project3 from "../../assets/project3.png";
+
 const Project = () => {
   return (
-    <div className="max-w-[1220px] mx-auto px-4 py-20">
+    <div id="projects" className="max-w-[1220px] mx-auto px-4 py-[100px]">
       {/* Title */}
       <div className="text-center mb-16">
         <div className="flex flex-col md:flex-row items-center justify-between md:gap-[70px] gap-6">
@@ -43,11 +47,7 @@ const Project = () => {
             </button>
           </div>
           <div className="flex-1">
-            <img
-              src="https://picsum.photos/500/300?random=1"
-              alt="project"
-              className="rounded-lg object-cover w-full"
-            />
+            <img src={project1} alt="project" className="object-cover w-full" />
           </div>
         </div>
 
@@ -68,11 +68,7 @@ const Project = () => {
             </button>
           </div>
           <div className="flex-1">
-            <img
-              src="https://picsum.photos/500/300?random=2"
-              alt="project"
-              className="rounded-lg object-cover w-full"
-            />
+            <img src={project2} alt="project" className="object-cover w-full" />
           </div>
         </div>
 
@@ -94,9 +90,9 @@ const Project = () => {
           </div>
           <div className="flex-1">
             <img
-              src="https://picsum.photos/500/300?random=3"
+              src={project3}
               alt="project"
-              className="rounded-lg object-cover w-full"
+              className=" object-cover w-full"
             />
           </div>
         </div>

@@ -46,61 +46,49 @@ const Question = () => {
   };
 
   return (
-    <div className=" py-16">
+    <div id="faq" className="py-[100px]">
       <div className="max-w-[1220px] mx-auto px-4 flex flex-col lg:flex-row gap-10">
         {/* Left side */}
         <div className="flex-1">
-          <h3 className="text-4xl md:text-6xl font-bold  leading-tight">
+          <h3 className="text-4xl md:text-6xl font-bold leading-tight">
             Ko'p beriladigan savollar
           </h3>
-          <p className="text-lg md:text-xl  mt-5 leading-relaxed">
-            "Biz bilan birga o'zingizni rivojlantiring – bu yerda bilim, ijod va
+          <p className="text-lg md:text-xl mt-5 leading-relaxed">
+            "Biz bilan birga o'zingizni rivojlantiring - bu yerda bilim, ijod va
             imkoniyatlar birlashadi."
           </p>
         </div>
 
         {/* Right side */}
         <div className="flex-1">
-          {/* FAQ content with steps */}
           <div className="flex flex-col">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="flex gap-4 items-start relative">
+              <div key={idx} className="flex gap-8 relative">
                 {/* Step number with line */}
                 <div className="flex flex-col items-center flex-shrink-0">
                   <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm cursor-pointer transition-all duration-300 z-10 ${
-                      openIndex === idx
-                        ? "bg-[#FFB21A] text-white scale-110 shadow-lg"
-                        : "bg-gray-200 text-gray-600 hover:bg-[#FFB21A] hover:text-white"
-                    }`}
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm cursor-pointer bg-[#FFB21A] text-white z-10"
                     onClick={() => handleStepClick(idx)}
                   >
                     {idx + 1}
                   </div>
 
-                  {/* Line */}
-                  {idx !== faqs.length - 1 && (
-                    <div
-                      className={`w-0.5 transition-all duration-300 ${
-                        openIndex === idx || openIndex === idx + 1
-                          ? "bg-[#FFB21A]"
-                          : "bg-gray-300"
-                      }`}
-                      style={{
-                        height: "80px",
-                      }}
-                    ></div>
-                  )}
+                  {/* Line har bir step uchun */}
+                  <div
+                    className="w-0.5 bg-[#FFB21A] transition-all duration-500"
+                    style={{ flexGrow: 1, minHeight: "40px" }}
+                  ></div>
                 </div>
 
                 {/* FAQ item */}
                 <div
                   ref={(el) => (faqRefs.current[idx] = el)}
-                  className={`flex-1 cursor-pointer border rounded-lg p-4 transition-all duration-300 mb-4 ${
-                    openIndex === idx
-                      ? "border-[#FFB21A] shadow-md"
-                      : "border-gray-200"
-                  }`}
+                  className={`flex-1 cursor-pointer border rounded-lg p-6 transition-all duration-300 mb-8`}
+                  style={{
+                    borderColor: openIndex === idx ? "#FFB21A" : "#e5e7eb",
+                    boxShadow:
+                      openIndex === idx ? "0 4px 6px rgba(0,0,0,0.1)" : "none",
+                  }}
                   onClick={() => toggleFAQ(idx)}
                 >
                   <div className="flex items-center justify-between">
@@ -129,11 +117,11 @@ const Question = () => {
                   <div
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${
                       openIndex === idx
-                        ? "max-h-96 opacity-100 mt-3"
+                        ? "max-h-96 opacity-100 mt-4"
                         : "max-h-0 opacity-0 mt-0"
                     }`}
                   >
-                    <p className="text-base  leading-relaxed">{faq.answer}</p>
+                    <p className="text-base leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </div>
