@@ -1,5 +1,6 @@
 import { Dot, MoveRight } from "lucide-react";
 import left from "../../assets/left.png";
+import dot from "../../assets/dot.svg";
 
 const About = () => {
   return (
@@ -32,22 +33,22 @@ const About = () => {
           <p className="text-[16px] font-[400]">Bizning asosiy vazifamiz:</p>
           <ul className="flex flex-col gap-[24px]">
             <li className="flex items-center gap-[20px] text-[16px] font-[400]">
-              <Dot size={20} className="text-[#FFB21A]" />
+              <img src={dot} alt="Dot" className="w-[8px] h-[9px]" />
               Manfaatlarni himoya qilish – har bir talabani qo‘llab-quvvatlash
               va uning huquqlarini kafolatlash.
             </li>
             <li className="flex items-center gap-[20px] text-[16px] font-[400]">
-              <Dot size={20} className="text-[#FFB21A]" />
+              <img src={dot} alt="Dot" className="w-[8px] h-[9px]" />
               Yangi g‘oyalarni rivojlantirish – tashabbuslarni amaliy
               loyihalarga aylantirish.
             </li>
             <li className="flex items-center gap-[20px] text-[16px] font-[400]">
-              <Dot size={20} className="text-[#FFB21A]" />
+              <img src={dot} alt="Dot" className="w-[8px] h-[9px]" />
               Universitet hayotini boyitish – ilmiy, madaniy va sport
               faoliyatini yangi bosqichga ko‘tarish.
             </li>
             <li className="flex items-center gap-[20px] text-[16px] font-[400]">
-              <Dot size={20} className="text-[#FFB21A]" />
+              <img src={dot} alt="Dot" className="w-[8px] h-[9px]" />
               Xalqaro maydonga olib chiqish – talabalarning global
               imkoniyatlardan foydalanishini ta’minlash.
             </li>
