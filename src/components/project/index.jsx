@@ -7,21 +7,24 @@ const Project = () => {
     <div id="projects" className="max-w-[1220px] mx-auto px-4 py-[100px]">
       {/* Title */}
       <div className="text-center mb-16">
-        <div className="flex flex-col md:flex-row items-center justify-between md:gap-[70px] gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between md:gap-[60px] gap-6">
           {/* Chap taraf */}
-          <h3 className="text-2xl sm:text-3xl md:text-[60px] font-bold  mb-4 text-center md:text-left">
-            Biz amalga oshirgan <br /> ajoyib loyiha
+          <h3 className="text-2xl sm:text-3xl md:text-[50px] font-bold  mb-4 text-center md:text-left">
+            Biz amalga oshirgan ajoyib loyiha
           </h3>
 
           {/* O‘ng taraf */}
           <div className="flex flex-col justify-end items-center md:items-end gap-[16px] text-center md:text-right">
             <p className=" text-base sm:text-lg md:text-[20px]">
-              “Biz bilan birga o‘zgarishni rejalashtiring – bu yerda <br />
-              bilim, g‘oya va imkoniyatlar birlashadi.”
+              “Biz bilan birga o‘zgarishni rejalashtiring – bu yerda bilim,
+              g‘oya va imkoniyatlar birlashadi.”
             </p>
-            <button className="bg-[#FFB21A] w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[400]">
+            <a
+              href="tel:+998908086383"
+              className="bg-[#FFB21A] transition hover:scale-105 w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[600]"
+            >
               Bog’laning
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -42,9 +45,12 @@ const Project = () => {
               etadi: suv bo‘yida sokinlik, shaharda esa qulaylik va
               imkoniyatlar.
             </p>
-            <button className="bg-[#FFB21A] max-w-[250px] w-full text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
+            <a
+              href="tel:+998908086383"
+              className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
+            >
               Bog’laning
-            </button>
+            </a>
           </div>
           <div className="flex-1">
             <img src={project1} alt="project" className="object-cover w-full" />
@@ -63,9 +69,12 @@ const Project = () => {
               binolar loyihalarini ko‘rsatish, arxitektorlarni tanlash imkonini
               ham berishadi
             </p>
-            <button className="bg-[#FFB21A] max-w-[250px] w-full  text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
+            <a
+              href="tel:+998908086383"
+              className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
+            >
               Bog’laning
-            </button>
+            </a>
           </div>
           <div className="flex-1">
             <img src={project2} alt="project" className="object-cover w-full" />
@@ -84,9 +93,12 @@ const Project = () => {
               o‘rinlari muntazam yangilanadi: ofis lavozimlaridan tortib,
               masofaviy ishlar yoki oddiy ishchi kasblarigacha.
             </p>
-            <button className="bg-[#FFB21A] max-w-[250px] w-full text-[16px] px-[70px] py-[12px] rounded-[24px] font-[400]">
+            <a
+              href="tel:+998908086383"
+              className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
+            >
               Bog’laning
-            </button>
+            </a>
           </div>
           <div className="flex-1">
             <img

@@ -31,7 +31,7 @@ const ParticipateHero = () => {
   };
 
   return (
-    <div className="max-w-[1220px] mx-auto py-10 px-4 mt-[200px]">
+    <div className="max-w-[1220px] mx-auto pt-10 pb-40 px-4 mt-[200px]">
       <div className="grid lg:grid-cols-2 gap-12 items-center p-8 border border-[#EFEFEF] rounded-[7px]">
         {/* Form Section */}
         <div className="p-8 ">

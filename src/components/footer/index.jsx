@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-white footer-top">
-        <div className="max-w-[1220px]  mx-auto px-4 py-[80px] flex flex-col lg:flex-row gap-x-55 gap-y-10 items-start justify-between">
+        <div className="max-w-[1220px]  mx-auto px-4 py-[80px] flex flex-col lg:flex-row gap-x-53 gap-y-10 items-start justify-between">
           {/* Logo & Contact */}
           <div className="flex flex-col gap-4 max-w-[300px] w-full">
             <img
@@ -65,25 +65,25 @@ const Footer = () => {
               <h3 className=" text-[18px] font-[700]">Ijtimoiy tarmoqlar</h3>
               <div className="flex gap-3 flex-wrap">
                 <a
-                  className="text-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
+                  className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="#"
                 >
                   <FaFacebook size={20} />
                 </a>
                 <a
-                  className="text-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
+                  className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="#"
                 >
                   <FaTwitter size={20} />
                 </a>
                 <a
-                  className="text-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
+                  className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="#"
                 >
                   <IoLogoLinkedin size={20} />
                 </a>
                 <a
-                  className="text-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
+                  className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="#"
                 >
                   <FaTelegram size={20} />

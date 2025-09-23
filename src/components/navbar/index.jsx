@@ -122,25 +122,27 @@ const Navbar = () => {
           }`}
         >
           {/* Logo - Mobile (har doim chiqadi) */}
-  <Link to="/" className="md:hidden transition-all duration-300">
-    <img
-      src={logo}
-      alt="Logo"
-      className="w-[55px] sm:w-[60px] h-auto object-contain"
-    />
-  </Link>
+          <Link to="/" className="md:hidden transition-all duration-300">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[55px] sm:w-[60px] h-auto object-contain"
+            />
+          </Link>
 
-  {/* Logo - Desktop (faqat scroll bo‘lmaganda chiqadi) */}
-  {!isScrolled && (
-    <Link to="/" className="hidden md:block transition-all duration-300">
-      <img
-        src={logo}
-        alt="Logo"
-        className="md:w-[65px] lg:w-[80px] h-auto object-contain"
-      />
-    </Link>
-  )}
-
+          {/* Logo - Desktop (faqat scroll bo‘lmaganda chiqadi) */}
+          {!isScrolled && (
+            <Link
+              to="/"
+              className="hidden md:block transition-all duration-300"
+            >
+              <img
+                src={logo}
+                alt="Logo"
+                className="md:w-[65px] lg:w-[80px] h-auto object-contain"
+              />
+            </Link>
+          )}
 
           {/* Right Side - scroll qilganda full width bo'ladi */}
           <div
@@ -169,50 +171,43 @@ const Navbar = () => {
               </a>
 
               {/* Divider */}
-              <div className="hidden md:block bg-[#FFB21A] w-[3px] h-[30px]"></div>
+              <div className="hidden md:block bg-[#FFB21A] w-[3px] h-[25px]"></div>
 
               {/* Location */}
               <img
                 src={locationn}
                 alt="Location"
-                className="w-[30px] md:w-[40px] h-auto"
+                className="w-[20px] md:w-[30px] h-auto"
               />
 
               {/* Dark Mode Toggle */}
               <button
                 onClick={toggleDarkMode}
-                className="relative w-16 h-9 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 rounded-full p-1 transition-all duration-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#FFB21A]/50 focus:ring-offset-0 shadow-inner"
+                className={`relative w-16 h-9 rounded-full p-1 transition-all duration-500 
+    ${
+      isDark
+        ? "bg-black border border-[#FFB21A]"
+        : "bg-white border border-[#FFB21A]"
+    }`}
                 aria-label="Toggle dark mode"
               >
                 {/* Knob */}
                 <div
-                  className={`absolute top-1 left-1 w-7 h-7 rounded-full shadow-lg backdrop-blur-md flex items-center justify-center transform transition-all duration-500 ${
-                    isDark
-                      ? "translate-x-7 bg-gradient-to-br from-gray-900 to-black"
-                      : "translate-x-0 bg-gradient-to-br from-yellow-300 to-orange-900"
-                  }`}
+                  className={`absolute top-1 left-1 w-7 h-7 rounded-full flex items-center justify-center transform transition-all duration-500
+      ${isDark ? "translate-x-7 bg-[#FFB21A]" : "translate-x-0 bg-[#FFB21A]"}`}
                 >
                   {isDark ? (
-                    <Moon className="w-4 h-4 text-blue-300" />
+                    <Moon className="w-4 h-4 text-white" />
                   ) : (
-                    <PiSunDimFill className="w-4 h-4 text-white drop-shadow-sm" />
+                    <PiSunDimFill className="w-4 h-4 text-white" />
                   )}
                 </div>
-
-                {/* Glow Effect */}
-                <div
-                  className={`absolute inset-0 rounded-full transition-all duration-500 ${
-                    isDark
-                      ? "bg-gradient-to-r from-blue-800/30 to-purple-700/30"
-                      : "bg-gradient-to-r from-yellow-700/40 to-orange-400/40"
-                  }`}
-                />
               </button>
 
               {/* Button (desktop only) */}
               <Link
                 to={"/participate"}
-                className="hidden md:block text-[14px] md:text-[16px] font-normal py-[8px] md:py-[12px] px-[30px] md:px-[50px] rounded-[24px] boglan bg-[#F7F7F7] border border-[#EFEFEF]"
+                className="hidden shadow-inner transition hover:scale-105 md:block text-[14px] md:text-[16px] font-[600] py-[8px] md:py-[12px] px-[30px] md:px-[50px] rounded-[24px] boglan bg-[#F7F7F7] border border-[#EFEFEF]"
               >
                 Bog'lanish
               </Link>
@@ -229,7 +224,7 @@ const Navbar = () => {
             {/* Navbar Menu (desktop) */}
             <div className={`hidden md:block ${isScrolled ? "flex-1" : ""}`}>
               <ul
-                className={`flex flex-wrap items-center gap-[20px] md:gap-[40px] ${
+                className={`flex flex-wrap items-center gap-[20px] md:gap-[25px] ${
                   isScrolled ? "justify-end" : "justify-center md:justify-start"
                 }`}
               >
