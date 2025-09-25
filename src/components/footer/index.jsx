@@ -74,7 +74,7 @@ const Footer = () => {
                 </a>
                 <a
                   className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/tuitstudentsunion?igsh=dmt4MHl2bjE1YjRu"
                 >
                   <FaInstagram size={20} />
                 </a>

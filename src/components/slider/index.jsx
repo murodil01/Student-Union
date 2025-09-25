@@ -111,7 +111,9 @@ const Slider = () => {
       id="service"
       className="max-w-[1220px] mx-auto px-4 py-[100px] text-center"
     >
-      <h3 className="text-4xl md:text-[60px]  font-bold">
+      <h3
+        className="text-3xl sm:text-4xl md:text-[60px] lg:text-[64px] font-bold"
+      >
         Bizning Klublarimiz
       </h3>
       <p className="text-base md:text-[20px] font-normal  max-w-[540px] my-[15px] mx-auto text-center">

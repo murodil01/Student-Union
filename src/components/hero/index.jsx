@@ -20,14 +20,12 @@ const Hero = () => {
 
   return (
     <div
-      className="relative bg-no-repeat bg-center bg-contain min-h-screen"
+      className="relative bg-no-repeat bg-center bg-contain min-h-0 md:min-h-screen"
       style={{
         backgroundImage: `url(${hero_bg})`,
       }}
     >
-      <div
-        className="max-w-[1220px] mt-[50px] mx-auto pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[30px]"
-      >
+      <div className="max-w-[1220px] mt-[50px] mx-auto pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[30px]">
         {/* Title animatsiya bilan */}
         <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-snug">
           {text.map((wordText, index) => (
@@ -49,8 +47,10 @@ const Hero = () => {
           TATU Talabalar Ittifoqi – tashabbus, ijod va imkoniyatlar markazi.
         </p>
 
-        {/* Button */}
-        <a href="https://t.me/+NfuwV4a6Lzg2OTg6" className="text-[20px] font-[700] max-w-[400px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+        <a
+          href="https://t.me/+NfuwV4a6Lzg2OTg6"
+          className="text-base sm:text-lg md:text-[20px] font-[700] w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px] px-6 sm:px-8 py-2 sm:py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
+        >
           A'ZO BO'LISH
         </a>
 

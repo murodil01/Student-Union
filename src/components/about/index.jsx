@@ -104,11 +104,11 @@ const About = () => {
           loading="lazy"
           width={630}
           height={400}
-          className="w-[630px] rounded-[6px] order-last md:order-first"
+          className="w-[630px] rounded-[6px]"
         />
 
         {/* RIGHT SIDE TEXT */}
-        <div className="flex flex-col gap-[20px] text-left order-first md:order-last">
+        <div className="flex flex-col gap-[20px] text-left">
           <h3 className="text-[24px] font-normal">Bizning asosiy vazifamiz :</h3>
 
           <ul className="flex flex-col gap-[24px]">

@@ -1,9 +1,8 @@
 import agroboost from "../../assets/agroboost.png";
 import foodquest from "../../assets/foodquest.png";
 import robocontest from "../../assets/robocontest.png";
-import freshline from "../../assets/freshline.png"
-import com from "../../assets/com.png"
-import { Link } from "react-router-dom"
+import freshline from "../../assets/freshline.png";
+import com from "../../assets/com.png";
 
 const Project = () => {
   return (
@@ -22,11 +21,12 @@ const Project = () => {
               “Biz bilan birga o‘zgarishni rejalashtiring – bu yerda bilim,
               g‘oya va imkoniyatlar birlashadi.”
             </p>
-            <Link to={"/participate"}
+            <a
+              href="+998908086383"
               className="bg-[#FFB21A] text-center transition hover:scale-105 w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[600]"
             >
               Bog'laning
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -56,7 +56,11 @@ const Project = () => {
             </a>
           </div>
           <div className="flex-1">
-            <img src={agroboost} alt="project" className="object-cover w-full" />
+            <img
+              src={agroboost}
+              alt="project"
+              className="object-cover w-full"
+            />
           </div>
         </div>
 
@@ -85,7 +89,11 @@ const Project = () => {
             </a>
           </div>
           <div className="flex-1">
-            <img src={foodquest} alt="project" className="object-cover w-full" />
+            <img
+              src={foodquest}
+              alt="project"
+              className="object-cover w-full"
+            />
           </div>
         </div>
 
@@ -144,7 +152,11 @@ const Project = () => {
             </a>
           </div>
           <div className="flex-1">
-            <img src={freshline} alt="project" className="object-cover w-full" />
+            <img
+              src={freshline}
+              alt="project"
+              className="object-cover w-full"
+            />
           </div>
         </div>
 
@@ -165,11 +177,7 @@ const Project = () => {
             </a>
           </div>
           <div className="flex-1">
-            <img
-              src={com}
-              alt="project"
-              className=" object-cover w-full"
-            />
+            <img src={com} alt="project" className=" object-cover w-full" />
           </div>
         </div>
       </div>

@@ -2,34 +2,25 @@ import { useState, useRef } from "react";
 
 const faqs = [
   {
-    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    question: "Talabalar Ittifoqiga qanday a’zo bo‘lish mumkin?",
     answer:
-      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+      "Agar siz TATU talabasi bo‘lsangiz, Talabalar Ittifoqiga a’zo bo‘lish juda oson! Media kanallarimizga qo‘shiling, rasmiy guruhlar va klublarimizga a’zo bo‘lish orqali faoliyatimizda ishtirok etishingiz mumkin. Yangiliklar, arizalar va boshqa muhim ma’lumotlar tez orada saytimizda e’lon qilinadi.",
   },
   {
-    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    question: "Talabalar Ittifoqining asosiy vazifalari nimalardan iborat?",
     answer:
-      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+      "Talabalar Ittifoqi – talabalar manfaatlarini himoya qilish, o‘qish va o‘qishdan tashqari faoliyatlarda ularga yordam berish uchun ishlaydi. Biz quyidagi yo‘nalishlarda yordam beramiz:* Huquqiy maslahatlar* Stajirovka va ish topishda ko‘mak* Start-up loyihalarni qo‘llab-quvvatlash* Madaniy, sport va ijtimoiy tadbirlarni tashkil qilishBarcha yangiliklar media kanallarimizda e’lon qilib boriladi.",
   },
   {
-    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    question:
+      "Talabalar Ittifoqi a’zolari uchun qanday imtiyozlar va imkoniyatlar mavjud?",
     answer:
-      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+      "Talabalar Ittifoqi a’zolari quyidagi imtiyozlarga ega bo‘ladilar: * Universitet ichidagi va tashqarisidagi eksklyuziv tadbirlarda qatnashish * Rivojlanish uchun treninglar, master-klasslar va seminarlar * Yetakchilik va jamoa boshqaruvi tajribasini oshirish * Hamkor tashkilotlar orqali stajirovka va ish imkoniyatlari * Startap va ijtimoiy loyihalarga grant yoki mentorlardan yordam olish",
   },
   {
-    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
+    question: "Ichki jamoada qanday qo'shilish mumkin",
     answer:
-      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
-  },
-  {
-    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
-    answer:
-      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
-  },
-  {
-    question: "Sizlarning xizmatlaringizdan qanday foydalanish mumkin?",
-    answer:
-      "Bizning sahifamiz orqali ro'yxatdan o'tib, kerakli xizmat yoki mahsulotni tanlashingiz kifoya.",
+      "Ichki jamoaga qo‘shilish uchun Talabalar Ittifoqi Prezidenti yoki jamoa vakillariga murojaat qilishingiz mumkin. Sizdan qisqacha ariza va suhbat asosida tanlovdan o‘tiladi. Ichki a’zolik qoidalari bilan saytimiz yoki rasmiy kanallar orqali tanishib chiqing.",
   },
 ];
 
@@ -92,7 +83,9 @@ const Question = () => {
                   onClick={() => toggleFAQ(idx)}
                 >
                   <div className="flex items-center justify-between">
-                    <h4 className="text-lg font-medium pr-4">{faq.question}</h4>
+                    <h4 className="text-base  sm:text-lg md:text-xl  lg:text-2xl font-medium pr-4">
+                      {faq.question}
+                    </h4>
                     <div
                       className={`transform transition-transform duration-300 ${
                         openIndex === idx ? "rotate-45" : "rotate-0"
@@ -121,7 +114,9 @@ const Question = () => {
                         : "max-h-0 opacity-0 mt-0"
                     }`}
                   >
-                    <p className="text-base leading-relaxed">{faq.answer}</p>
+                    <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed">
+                      {faq.answer}
+                    </p>
                   </div>
                 </div>
               </div>
