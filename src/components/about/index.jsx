@@ -62,7 +62,7 @@ const About = () => {
           <button
             onClick={() =>
               window.open(
-                "../../../public/files/Toshkent_Axborot_Texnologiyalari_Universiteti_Talabalar_Ittifoqi.pdf",
+                "/files/Toshkent_Axborot_Texnologiyalari_Universiteti_Talabalar_Ittifoqi.pdf",
                 "_blank"
               )
             }
