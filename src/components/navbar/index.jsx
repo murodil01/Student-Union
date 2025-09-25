@@ -148,7 +148,7 @@ const Navbar = () => {
           <div
             className={`transition-all duration-300 ${
               isScrolled
-                ? "flex flex-row-reverse items-center justify-between w-full gap-[170px]"
+                ? "flex flex-row-reverse items-center justify-between w-full gap-[150px]"
                 : "flex flex-col gap-[25px] w-full md:w-auto"
             }`}
           >
@@ -161,12 +161,12 @@ const Navbar = () => {
               {/* Phone */}
               <a
                 className="flex items-center gap-[8px] text-[16px] md:text-[18px] font-normal"
-                href="tel:1234567890"
+                href="tel:+998908086383"
               >
                 <FaPhone size={25} className="text-[#FFB21A]" />
                 {/* faqat scroll bo'lmaganda text chiqsin */}
                 {!isScrolled && (
-                  <span className="hidden md:inline">123-456-7890</span>
+                  <span className="hidden md:inline">+998 90 808 63 83</span>
                 )}
               </a>
 
@@ -174,11 +174,13 @@ const Navbar = () => {
               <div className="hidden md:block bg-[#FFB21A] w-[3px] h-[25px]"></div>
 
               {/* Location */}
-              <img
-                src={locationn}
-                alt="Location"
-                className="w-[20px] md:w-[30px] h-auto"
-              />
+              <a className="cursor-pointer" href="https://www.google.com/maps/place/Tashkent+University+of+Information+Technologies/@41.3409302,69.2867291,17z/data=!4m6!3m5!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!8m2!3d41.3409302!4d69.2867291!16s%2Fm%2F02x8vhy?entry=tts&g_ep=EgoyMDI1MDUxMy4xIPu8ASoASAFQAw%3D%3D&skid=7fad99e4-6c88-4f5e-95c5-6636cb65a97d">
+                <img
+                  src={locationn}
+                  alt="Location"
+                  className="w-[20px] md:w-[30px] h-auto"
+                />
+              </a>
 
               {/* Dark Mode Toggle */}
               <button
@@ -224,7 +226,7 @@ const Navbar = () => {
             {/* Navbar Menu (desktop) */}
             <div className={`hidden md:block ${isScrolled ? "flex-1" : ""}`}>
               <ul
-                className={`flex flex-wrap items-center gap-[20px] md:gap-[25px] ${
+                className={`flex flex-wrap items-center gap-[20px] md:gap-[23px] ${
                   isScrolled ? "justify-end" : "justify-center md:justify-start"
                 }`}
               >
@@ -233,7 +235,7 @@ const Navbar = () => {
                     to="/"
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200"
                   >
-                    Asosiy
+                    Bosh sahifa
                   </Link>
                 </li>
                 <li>
@@ -249,7 +251,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection("service")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
-                    Xizmatlar
+                    Klublar
                   </button>
                 </li>
                 <li>
@@ -257,7 +259,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection("projects")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
-                    Proyektlar
+                    Loyihalar
                   </button>
                 </li>
                 <li>
@@ -265,7 +267,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection("faq")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
-                    Faq
+                    FAQ
                   </button>
                 </li>
               </ul>
@@ -283,7 +285,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200"
                 >
-                  Asosiy
+                  Bosh sahifa
                 </Link>
               </li>
               <li>
@@ -299,7 +301,7 @@ const Navbar = () => {
                   onClick={() => scrollToSection("service")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
-                  Xizmatlar
+                  Klublar
                 </button>
               </li>
               <li>
@@ -307,7 +309,7 @@ const Navbar = () => {
                   onClick={() => scrollToSection("projects")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
-                  Proyektlar
+                  Loyihalar
                 </button>
               </li>
               <li>
@@ -315,7 +317,7 @@ const Navbar = () => {
                   onClick={() => scrollToSection("faq")}
                   className="text-[#323232] text-[22px] font-normal hover:font-[700] transition-all duration-200 bg-transparent border-none cursor-pointer p-0"
                 >
-                  Faq
+                  FAQ
                 </button>
               </li>
             </ul>

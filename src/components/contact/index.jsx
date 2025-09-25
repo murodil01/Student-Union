@@ -18,7 +18,7 @@ const Hero = () => {
         text-center flex flex-col justify-center items-center gap-[24px]"
       >
         <h3 className="text-[clamp(24px,5vw,60px)] font-[700]">
-          Fikirlaringiz bormi? <br /> Keling gaplashamiz
+          Fikrlaringiz bormi? <br /> Keling gaplashamiz
         </h3>
 
         <p className="text-base md:text-lg font-normal max-w-2xl">
