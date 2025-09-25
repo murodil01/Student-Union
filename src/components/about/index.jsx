@@ -76,7 +76,7 @@
 // export default About;
 
 import { MoveRight } from "lucide-react";
-import union from "../../assets/union.JPG";
+import union from "../../assets/union.jpg";
 
 const About = () => {
   return (
