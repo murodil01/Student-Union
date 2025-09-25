@@ -1,5 +1,7 @@
 import { useState } from "react";
 import boglanish from "../../../assets/boglanish.png";
+import { toast } from "react-hot-toast";
+
 const ParticipateHero = () => {
   const [formData, setFormData] = useState({
     ism: "",
@@ -18,16 +20,50 @@ const ParticipateHero = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      portfolio: e.target.files[0],
-    }));
-  };
+  // const handleFileChange = (e) => {
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     portfolio: e.target.files[0],
+  //   }));
+  // };
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", formData);
-    // Handle form submission here
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = new FormData();
+    data.append("ism", formData.ism);
+    data.append("familiya", formData.familiya);
+    data.append("email", formData.email);
+    data.append("fakultet", formData.fakultet);
+    data.append("xabar", formData.xabar);
+    if (formData.portfolio) {
+      data.append("portfolio", formData.portfolio);
+    }
+
+    try {
+      const response = await fetch("https://formspree.io/f/xrbyzrzq", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        toast.success("Muvaffaqiyatli yuborildi!");
+        setFormData({
+          ism: "",
+          familiya: "",
+          email: "",
+          fakultet: "",
+          portfolio: null,
+          xabar: "",
+        });
+      } else {
+        toast.error("Xatolik yuz berdi. Qayta urinib ko‘ring.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error("⚠️ Serverga ulanib bo‘lmadi.");
+    }
   };
 
   return (
@@ -44,7 +80,7 @@ const ParticipateHero = () => {
             Biz bilan bog'lanish va birga ishga yachim topamiz.
           </p>
 
-          <div className="space-y-4 sm:space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
             {/* Ism va Familiya */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
@@ -90,7 +126,7 @@ const ParticipateHero = () => {
             />
 
             {/* File Upload */}
-            <div className="relative">
+            {/* <div className="relative">
               <input
                 type="file"
                 name="portfolio"
@@ -126,7 +162,7 @@ const ParticipateHero = () => {
                   />
                 </svg>
               </label>
-            </div>
+            </div> */}
 
             {/* Xabar */}
             <textarea
@@ -140,12 +176,12 @@ const ParticipateHero = () => {
 
             {/* Button */}
             <button
-              onClick={handleSubmit}
+              type="submit"
               className="w-full bg-[#FFB21A] font-semibold text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-6 rounded-[28px] sm:rounded-[32px] transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               Yuborish
             </button>
-          </div>
+          </form>
         </div>
 
         {/* Image Section */}

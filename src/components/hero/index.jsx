@@ -49,7 +49,7 @@ const Hero = () => {
 
         <a
           href="https://t.me/+NfuwV4a6Lzg2OTg6"
-          className="text-base sm:text-lg md:text-[20px] font-[700] w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px] px-6 sm:px-8 py-2 sm:py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
+          className="text-base sm:text-lg md:text-[20px] font-[700] w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px] lg:mt-6 px-6 sm:px-8 py-2 sm:py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
         >
           A'ZO BO'LISH
         </a>
