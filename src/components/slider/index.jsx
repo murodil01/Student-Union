@@ -1,8 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Minus } from "lucide-react";
-import slider1 from "../../assets/slider1.png";
-import slider2 from "../../assets/slider2.png";
-import slider3 from "../../assets/slider3.png";
+import coding from "../../assets/coding.jpg";
+import debate from "../../assets/debate.jpg";
+import holiday from "../../assets/holiday.jpg";
+import leadership from "../../assets/leadership.jpg";
+import music from "../../assets/music.jpg";
+import paint from "../../assets/paint.jpg";
+import practica from "../../assets/practica.jpg";
+import sport from "../../assets/sport.jpg";
+import cyber from "../../assets/cyber.jpg";
+import robotics from "../../assets/robotics.jpg";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,39 +18,63 @@ const Slider = () => {
 
   const slides = [
     {
-      img: slider1,
+      img: sport,
       title: "Sport klubi",
-      desc: "Sog'lom turmush tarzini targ'ib etuvchi klub, va sport musobaqalari orqali birlashtiradi.",
+      desc: "Sog‘lom tana — sog‘lom aql! Sport musobaqalari, jismoniy faollik va jamoaviy ruh orqali hayotingizga energiya qo‘shing.",
       btn: "A’zo bo’lish",
     },
     {
-      img: slider2,
-      title: "Robototexnika klubi",
-      desc: "Texnologiya, dasturlash kodlash va innovatsiyalarni sevuvchilar uchun ijodiy klub.",
+      img: robotics,
+      title: "Robototexnika Klubi",
+      desc: "G‘oyalaringizni harakatga keltiring! Texnologiya va muhandislikka qiziqqanlar uchun ilg‘or loyihalar, musobaqalar va yaratuvchanlik markazi.",
       btn: "A’zo bo’lish",
     },
     {
-      img: slider3,
-      title: "Sayohat klubi",
-      desc: "Dunyo va mamlakatimizning go'zal maskanlarini birgalikda kashf etish uchun tashkil etilgan klub.",
+      img: coding,
+      title: "Dasturlash Klubi",
+      desc: "Kodni o‘rgan, kelajakni yaratsang! Yangi texnologiyalar, algoritmlar va dasturlash tillarini o‘rganib, IT olamida o‘zingizni toping.",
       btn: "A’zo bo’lish",
     },
     {
-      img: "https://picsum.photos/400/300?random=4",
-      title: "Sport klubi",
-      desc: "Sog'lom turmush tarzini targ'ib etuvchi klub, va sport musobaqalari orqali birlashtiradi.",
+      img: holiday,
+      title: "Sayohat Klubi",
+      desc: "O‘zingizni kashf qilish yo‘lda boshlanadi.Tabiat qo‘ynida sayohatlar, yangi joylar va unutilmas sarguzashtlar sizni kutmoqda.",
       btn: "A’zo bo’lish",
     },
     {
-      img: "https://picsum.photos/400/300?random=5",
-      title: "Robototexnika klubi",
-      desc: "Texnologiya, dasturlash kodlash va innovatsiyalarni sevuvchilar uchun ijodiy klub.",
+      img: cyber,
+      title: "Cyber Sport Klubi",
+      desc: "O‘yin orqali g‘alabaga! E-sport musobaqalari, strategiya va jamoaviy o‘yinlar orqali raqamli dunyoda chempion bo‘ling.",
       btn: "A’zo bo’lish",
     },
     {
-      img: "https://picsum.photos/400/300?random=6",
-      title: "Sayohat klubi",
-      desc: "Dunyo va mamlakatimizning go'zal maskanlarini birgalikda kashf etish uchun tashkil etilgan klub.",
+      img: practica,
+      title: "Amaliy Ishlash va Loyiha Yaratish Klubi",
+      desc: "G‘oyadan natijaga! Real loyihalar, startaplar va innovatsion yechimlar ustida ishlash uchun imkoniyat maydoni.",
+      btn: "A’zo bo’lish",
+    },
+    {
+      img: paint,
+      title: "Dizayn va San’at Klubi",
+      desc: "Ijodingizga rang qo‘shing! Grafik dizayn, rasm, video montaj va san’at orqali o‘zingizni ifoda eting.",
+      btn: "A’zo bo’lish",
+    },
+    {
+      img: debate,
+      title: "Kitobxonlik va Munozara Klubi",
+      desc: "So‘z kuchi – fikr erkinligi. Kitoblar muhokamasi, debatlar va intellektual o‘sish uchun maydon.",
+      btn: "A’zo bo’lish",
+    },
+    {
+      img: music,
+      title: "Musiqa va Drama Klubi",
+      desc: "Ijod va sahna sizni kutmoqda! Qo‘shiq, teatr va chiqishlar orqali iste’dodingizni namoyon eting.",
+      btn: "A’zo bo’lish",
+    },
+    {
+      img: leadership,
+      title: "Liderlik va Tadbirkorlik Klubi",
+      desc: "Kelajak liderlari bu yerda shakllanadi. Shaxsiy rivojlanish, biznes g‘oyalar va boshqaruv ko‘nikmalarini rivojlantiring.",
       btn: "A’zo bo’lish",
     },
   ];
@@ -115,9 +146,12 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  <button className="mt-[16px] px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform"
+                    className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
+                  >
                     {item.btn}
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

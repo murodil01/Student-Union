@@ -1,11 +1,16 @@
-import vacation1 from "../../assets/vacation/vacation1.png";
-import vacation2 from "../../assets/vacation/vacation2.png";
-import vacation3 from "../../assets/vacation/vacation3.png";
-import vacation4 from "../../assets/vacation/vacation4.png";
-import vacation5 from "../../assets/vacation/vacation5.png";
-import vacation6 from "../../assets/vacation/vacation6.png";
-import vacation7 from "../../assets/vacation/vacation7.png";
-import vacation8 from "../../assets/vacation/vacation8.png";
+import fourPeople from "../../assets/fourPeople.jpg";
+import fozilChes from "../../assets/fozilChes.jpg";
+import japaDiplom from "../../assets/japaDiplom.jpg";
+import japanIskandar from "../../assets/japanIskandar.jpg";
+import japanTogether from "../../assets/japanTogether.jpg";
+import kaltaMinor from "../../assets/kaltaMinor.jpg";
+import labPeople from "../../assets/labPeople.jpg";
+import mushtariy from "../../assets/mushtariy.jpg";
+import threePeople from "../../assets/threePeople.jpg";
+import vaucher from "../../assets/vaucher.jpg";
+import xivaThree from "../../assets/xivaThree.jpg";
+import china from "../../assets/china.jpg";
+
 import { Image } from "antd";
 
 const Vacation = () => {
@@ -15,9 +20,8 @@ const Vacation = () => {
         Tadbirlar va Sayohatlar
       </h3>
 
-      <p className="text-base md:text-lg font-normal max-w-[470px] mx-auto my-4">
-        “Biz bilan birga o‘zingizni rivojlantiring – bu yerda bilim, ijod va
-        imkoniyatlar birlashadi..
+      <p className="text-base md:text-lg font-normal max-w-[600px] mx-auto mt-4">
+        Har bir kun – yangi sarguzasht, yangi do‘stlik va unutilmas lahzalar.
       </p>
 
       {/* Grid */}
@@ -28,46 +32,27 @@ const Vacation = () => {
               console.log(`current index: ${current}, prev index: ${prev}`),
           }}
         >
-          <Image
-            src={vacation1}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation2}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation3}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation4}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation5}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation6}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation7}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
-          <Image
-            src={vacation8}
-            alt="Image"
-            className="w-full h-[260px] object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-          />
+          {[
+            fourPeople,
+            threePeople,
+            vaucher,
+            japanTogether,
+            labPeople,
+            japanIskandar,
+            japaDiplom,
+            fozilChes,
+            kaltaMinor,
+            mushtariy,
+            xivaThree,
+            china,
+          ].map((src, index) => (
+            <Image
+              key={index}
+              src={src}
+              alt={`Image ${index + 1}`}
+              className="w-full aspect-square object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+            />
+          ))}
         </Image.PreviewGroup>
       </div>
     </div>

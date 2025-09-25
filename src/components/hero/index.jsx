@@ -26,7 +26,7 @@ const Hero = () => {
       }}
     >
       <div
-        className="max-w-[1220px] mt-[50px] mx-auto pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[24px]"
+        className="max-w-[1220px] mt-[50px] mx-auto pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[30px]"
       >
         {/* Title animatsiya bilan */}
         <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-snug">
@@ -50,12 +50,12 @@ const Hero = () => {
         </p>
 
         {/* Button */}
-        <button className="text-[16px] font-medium max-w-[200px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+        <a href="https://t.me/+NfuwV4a6Lzg2OTg6" className="text-[20px] font-[700] max-w-[400px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
           A'ZO BO'LISH
-        </button>
+        </a>
 
         {/* Responsive YouTube video */}
-        <div className="mt-10 w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] aspect-video rounded-[16px] overflow-hidden shadow-lg">
+        {/* <div className="mt-10 w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] aspect-video rounded-[16px] overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/2xjygHcPgOE?autoplay=1&mute=1&loop=1&playlist=2xjygHcPgOE&controls=1&modestbranding=1&rel=0"
@@ -64,7 +64,7 @@ const Hero = () => {
             allow="autoplay; encrypted-media"
             allowFullScreen
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </div>
   );

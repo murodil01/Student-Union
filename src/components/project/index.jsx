@@ -1,6 +1,9 @@
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
+import agroboost from "../../assets/agroboost.png";
+import foodquest from "../../assets/foodquest.png";
+import robocontest from "../../assets/robocontest.png";
+import freshline from "../../assets/freshline.png"
+import com from "../../assets/com.png"
+import { Link } from "react-router-dom"
 
 const Project = () => {
   return (
@@ -19,12 +22,11 @@ const Project = () => {
               “Biz bilan birga o‘zgarishni rejalashtiring – bu yerda bilim,
               g‘oya va imkoniyatlar birlashadi.”
             </p>
-            <a
-              href="tel:+998908086383"
-              className="bg-[#FFB21A] transition hover:scale-105 w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[600]"
+            <Link to={"/participate"}
+              className="bg-[#FFB21A] text-center transition hover:scale-105 w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[600]"
             >
-              Bog’laning
-            </a>
+              Bog'laning
+            </Link>
           </div>
         </div>
       </div>
@@ -34,75 +36,137 @@ const Project = () => {
         {/* 1 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 text-center">
-            <h3 className="text-[24px] font-bold  mb-[16px]">
-              Water City Dreams
-            </h3>
+            <h3 className="text-[24px] font-bold  mb-[16px]">Agroboost UZ</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
-              Water City Dreams — bu suv va shahar uyg‘unligida yaratilayotgan
-              yirik loyiha bo‘lib, zamonaviy infratuzilma, yashil hududlar va
-              innovatsion arxitektura yechimlarini o‘z ichiga oladi. Loyiha
-              shahar aholisi va mehmonlari uchun yangi turmush tarzini taqdim
-              etadi: suv bo‘yida sokinlik, shaharda esa qulaylik va
-              imkoniyatlar.
+              Agroboost fermerlarga dron monitoringi, aqlli sensorlar va
+              ma’lumotlarni tahlil qilish kabi raqamli vositalarni taqdim etadi.
+              U dalalardan real vaqt rejimida ma’lumot yig‘ib, sug‘orish,
+              o‘g‘itlash va hosilni yig‘ib olish bo‘yicha tavsiyalar beradi.
+              Asosiy foydasi — unumdorlikni oshirish, xarajatlarni kamaytirish
+              va yanada barqaror qishloq xo‘jaligi amaliyotlarini yo‘lga
+              qo‘yishdir. U samaradorlik pastligi va zamonaviy texnologiyalardan
+              foydalanish imkoniyati cheklanganligi muammosini hal qilib,
+              fermerlarga ongli qarorlar qabul qilishda yordam beradi.
             </p>
             <a
-              href="tel:+998908086383"
+              href="https://agroboost.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
-              Bog’laning
+              Batafsil
             </a>
           </div>
           <div className="flex-1">
-            <img src={project1} alt="project" className="object-cover w-full" />
+            <img src={agroboost} alt="project" className="object-cover w-full" />
           </div>
         </div>
 
         {/* 2 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="flex-1 text-center">
-            <h3 className="text-[24px] font-bold  mb-[16px]">ArxPro</h3>
+            <h3 className="text-[24px] font-bold  mb-[16px]">FoodQuest UZ</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
-              ArxPro — zamonaviy arxitektura studiyasi va loyihalashtirish
-              platformasi bo‘lib, O‘zbekiston bozorida faoliyat yuritadi.
-              Ularning saytida “Projects” (loyihalar) va “Architects”
-              (arxitektorlar) bo‘limlari bor, ya’ni ular mijozlarga turli uylar,
-              binolar loyihalarini ko‘rsatish, arxitektorlarni tanlash imkonini
-              ham berishadi
+              FoodQuest ovqatlarni kashf qilishni qiziqarli va arzon qilish
+              uchun gamifikatsiya, “mo‘’jizaviy chegirmalar” va dinamik narxlar
+              kabi raqamli vositalardan foydalanadi. U restoranlar va ovqat
+              yetkazib beruvchilarni mijozlar bilan ulab, chegirmalar,
+              mukofotlar hamda taomlarning real vaqtdagi mavjudligi haqida
+              ma’lumot taqdim etadigan aqlli platforma orqali ishlaydi. Asosiy
+              foydalari — pastroq narxlar, hayajonli foydalanuvchi tajribasi va
+              ovqat bizneslari uchun yaxshiroq ko‘rinishdir. FoodQuest yuqori
+              narxlar va ortiqcha chiqindilar muammosini ortiqcha ovqatlarni
+              qayta taqsimlash hamda mamlakat bo‘ylab oziq-ovqat iste’molini
+              muvozanatlashtirish orqali hal qiladi.
             </p>
             <a
-              href="tel:+998908086383"
+              href="https://foodquest.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
-              Bog’laning
+              Batafsil
             </a>
           </div>
           <div className="flex-1">
-            <img src={project2} alt="project" className="object-cover w-full" />
+            <img src={foodquest} alt="project" className="object-cover w-full" />
           </div>
         </div>
 
         {/* 3 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 text-center">
-            <h3 className="text-[24px] font-bold  mb-[16px]">UzWorks</h3>
+            <h3 className="text-[24px] font-bold  mb-[16px]">Robocontest UZ</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
-              UzWorks — bu O‘zbekistonda ish izlash va ishchi topish uchun
-              yaratilgan zamonaviy onlayn platforma. Xodimlar va ish
-              beruvchilarni yagona maydonda bog‘lab, qulay va tezkor xizmat
-              ko‘rsatadi. Platformada turli soha va yo‘nalishlardagi bo‘sh ish
-              o‘rinlari muntazam yangilanadi: ofis lavozimlaridan tortib,
-              masofaviy ishlar yoki oddiy ishchi kasblarigacha.
+              Robocontest dasturlash bo‘yicha masalalar, topshiriqlar va
+              avtomatlashtirilgan baholash tizimlarini taqdim etadi. U
+              ishtirokchilarga topshiriqlarni yechish, musobaqalarda qatnashish
+              va yechimlari yuzasidan darhol fikr-mulohaza olish imkonini
+              beradigan onlayn platforma orqali ishlaydi. Asosiy foydasi —
+              amaliy mashg‘ulot, ko‘nikmalarni rivojlantirish va haqiqiy hayotiy
+              loyihalarga tayyorgarlikdir. U yosh dasturchilarning bilimlarini
+              sinab ko‘rish va xalqaro darajada raqobatlashish imkoniyatlarining
+              cheklanganligi muammosini hal qiladi.
             </p>
             <a
-              href="tel:+998908086383"
+              href="https://robocontest.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
-              Bog’laning
+              Batafsil
             </a>
           </div>
           <div className="flex-1">
             <img
-              src={project3}
+              src={robocontest}
+              alt="project"
+              className=" object-cover w-full"
+            />
+          </div>
+        </div>
+
+        {/* 4 */}
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+          <div className="flex-1 text-center">
+            <h3 className="text-[24px] font-bold  mb-[16px]">Freshline</h3>
+            <p className=" text-[16px] font-[400] mb-[40px]">
+              Freshline yangi mahsulotlarni yetkazib berishda raqamli kuzatuv,
+              yo‘nalishlarni optimallashtirish va sovuq zanjir monitoringi kabi
+              logistika vositalarini taqdim etadi. U fermerlar, yetkazib
+              beruvchilar va mijozlarni birlashtiradigan, mahsulotlarning o‘z
+              vaqtida va xavfsiz yetib borishini ta’minlaydigan shaffof
+              platforma orqali ishlaydi. Asosiy foydalari — yanada yangi
+              mahsulotlar, chiqindilarni kamaytirish va biznes hamda
+              iste’molchilar uchun xarajatlarning pasayishidir. U an’anaviy
+              ta’minot zanjiridagi samarasizlik va mahsulot yo‘qotish muammosini
+              aqlli, texnologiyaga asoslangan taqsimot orqali hal qiladi.
+            </p>
+            <a
+              href="http://fresh-line.uz/"
+              className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
+            >
+              Batafsil
+            </a>
+          </div>
+          <div className="flex-1">
+            <img src={freshline} alt="project" className="object-cover w-full" />
+          </div>
+        </div>
+
+        {/* 5 */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-1 text-center">
+            <h3 className="text-[24px] font-bold  mb-[16px]">Tez kunda</h3>
+            <p className=" text-[16px] font-[400] mb-[40px]">
+              Biz yaratishda charchamaymiz. 🚀 Yana bir startap yo‘lda — yanada
+              katta, aqlli va ilhomlantiruvchi. Kuzatib boring, kelajak
+              yuklanmoqda…
+            </p>
+            <a
+              href="/"
+              className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
+            >
+              Batafsil
+            </a>
+          </div>
+          <div className="flex-1">
+            <img
+              src={com}
               alt="project"
               className=" object-cover w-full"
             />
