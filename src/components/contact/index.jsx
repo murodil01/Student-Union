@@ -30,7 +30,7 @@ const Hero = () => {
           <button className="w-full sm:w-[180px] text-[16px] font-medium px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
             Bog’laning
           </button>
-          <button className="w-full sm:w-[180px] text-[16px] font-medium text-[#323232] px-8 py-3 rounded-[24px] border border-[#323232] bg-white shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+          <button className="w-full sm:w-[180px] text-[16px] font-medium text-[#323232] px-8 py-3 rounded-[24px] border border-[#323232] bg-white shadow-inner transition hover:scale-105">
             Email
           </button>
         </div>

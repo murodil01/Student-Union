@@ -14,37 +14,37 @@ const Slider = () => {
       img: slider1,
       title: "Sport klubi",
       desc: "Sog'lom turmush tarzini targ'ib etuvchi klub, va sport musobaqalari orqali birlashtiradi.",
-      btn: "Qo'shilish",
+      btn: "A’zo bo’lish",
     },
     {
       img: slider2,
       title: "Robototexnika klubi",
       desc: "Texnologiya, dasturlash kodlash va innovatsiyalarni sevuvchilar uchun ijodiy klub.",
-      btn: "Qo'shilish",
+      btn: "A’zo bo’lish",
     },
     {
       img: slider3,
       title: "Sayohat klubi",
       desc: "Dunyo va mamlakatimizning go'zal maskanlarini birgalikda kashf etish uchun tashkil etilgan klub.",
-      btn: "Qo'shilish",
+      btn: "A’zo bo’lish",
     },
     {
       img: "https://picsum.photos/400/300?random=4",
       title: "Sport klubi",
       desc: "Sog'lom turmush tarzini targ'ib etuvchi klub, va sport musobaqalari orqali birlashtiradi.",
-      btn: "Qo'shilish",
+      btn: "A’zo bo’lish",
     },
     {
       img: "https://picsum.photos/400/300?random=5",
       title: "Robototexnika klubi",
       desc: "Texnologiya, dasturlash kodlash va innovatsiyalarni sevuvchilar uchun ijodiy klub.",
-      btn: "Qo'shilish",
+      btn: "A’zo bo’lish",
     },
     {
       img: "https://picsum.photos/400/300?random=6",
       title: "Sayohat klubi",
       desc: "Dunyo va mamlakatimizning go'zal maskanlarini birgalikda kashf etish uchun tashkil etilgan klub.",
-      btn: "Qo'shilish",
+      btn: "A’zo bo’lish",
     },
   ];
 

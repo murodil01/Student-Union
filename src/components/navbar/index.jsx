@@ -163,7 +163,7 @@ const Navbar = () => {
                 className="flex items-center gap-[8px] text-[16px] md:text-[18px] font-normal"
                 href="tel:1234567890"
               >
-                <FaPhone size={20} className="text-[#FFB21A]" />
+                <FaPhone size={25} className="text-[#FFB21A]" />
                 {/* faqat scroll bo'lmaganda text chiqsin */}
                 {!isScrolled && (
                   <span className="hidden md:inline">123-456-7890</span>
@@ -231,7 +231,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/"
-                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200"
+                    className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200"
                   >
                     Asosiy
                   </Link>
@@ -239,7 +239,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={() => scrollToSection("about")}
-                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                    className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Biz haqimizda
                   </button>
@@ -247,7 +247,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={() => scrollToSection("service")}
-                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                    className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Xizmatlar
                   </button>
@@ -255,7 +255,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={() => scrollToSection("projects")}
-                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                    className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Proyektlar
                   </button>
@@ -263,7 +263,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={() => scrollToSection("faq")}
-                    className="text-[18px] md:text-[24px] font-[400] hover:font-[500] hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
+                    className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
                     Faq
                   </button>
