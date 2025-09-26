@@ -34,7 +34,7 @@ const Project = () => {
       {/* Projects */}
       <div className="flex flex-col gap-12">
         {/* 1 */}
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8">
           <div className="flex-1 text-center">
             <h3 className="text-[24px] font-bold  mb-[16px]">Agroboost UZ</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
@@ -65,7 +65,7 @@ const Project = () => {
         </div>
 
         {/* 2 */}
-        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+        <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-8">
           <div className="flex-1 text-center">
             <h3 className="text-[24px] font-bold  mb-[16px]">FoodQuest UZ</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
@@ -98,7 +98,7 @@ const Project = () => {
         </div>
 
         {/* 3 */}
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8">
           <div className="flex-1 text-center">
             <h3 className="text-[24px] font-bold  mb-[16px]">Robocontest UZ</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
@@ -129,7 +129,7 @@ const Project = () => {
         </div>
 
         {/* 4 */}
-        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+        <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-8">
           <div className="flex-1 text-center">
             <h3 className="text-[24px] font-bold  mb-[16px]">Freshline</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
@@ -161,7 +161,7 @@ const Project = () => {
         </div>
 
         {/* 5 */}
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8">
           <div className="flex-1 text-center">
             <h3 className="text-[24px] font-bold  mb-[16px]">Tez kunda</h3>
             <p className=" text-[16px] font-[400] mb-[40px]">
