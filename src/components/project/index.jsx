@@ -22,6 +22,7 @@ const Project = () => {
               g‘oya va imkoniyatlar birlashadi.”
             </p>
             <a
+              aria-label="Bog'lanish"
               href="+998908086383"
               className="bg-[#FFB21A] text-center transition hover:scale-105 w-full max-w-auto  sm:w-[180px]  text-[16px] px-6 sm:px-10 py-3 rounded-[24px] font-[600]"
             >
@@ -49,6 +50,7 @@ const Project = () => {
               fermerlarga ongli qarorlar qabul qilishda yordam beradi.
             </p>
             <a
+              aria-label="Batafsil"
               href="https://agroboost.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
@@ -82,6 +84,7 @@ const Project = () => {
               muvozanatlashtirish orqali hal qiladi.
             </p>
             <a
+              aria-label="Batafsil"
               href="https://foodquest.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
@@ -113,6 +116,7 @@ const Project = () => {
               cheklanganligi muammosini hal qiladi.
             </p>
             <a
+              aria-label="Batafsil"
               href="https://robocontest.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
@@ -145,6 +149,7 @@ const Project = () => {
               aqlli, texnologiyaga asoslangan taqsimot orqali hal qiladi.
             </p>
             <a
+              aria-label="Batafsil"
               href="http://fresh-line.uz/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >
@@ -170,6 +175,7 @@ const Project = () => {
               yuklanmoqda…
             </p>
             <a
+              aria-label="Batafsil"
               href="/"
               className="bg-[#FFB21A] mx-auto block text-center transition-transform duration-300 ease-in-out hover:scale-105 max-w-[250px] text-[16px] px-[70px] py-[12px] rounded-[24px] font-[600]"
             >

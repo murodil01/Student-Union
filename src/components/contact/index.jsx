@@ -28,12 +28,14 @@ const Hero = () => {
 
         <div className="flex items-center gap-[20px]">
           <Link
+          aria-label="Bog'laning"
             to={"/participate"}
             className="md:w-[180px] w-[150px] md:text-[16px] text-[14px] font-medium px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105 text-center"
           >
             Bog’laning
           </Link>
           <a
+          aria-label="Email"
             href="mailto:info@su-tuit.uz"
             className="md:w-[180px] w-[150px] md:text-[16px] text-[14px] font-medium text-[#323232] px-8 py-3 rounded-[24px] border border-[#323232] bg-white shadow-inner transition hover:scale-105 text-center"
           >

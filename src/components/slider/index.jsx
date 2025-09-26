@@ -149,6 +149,7 @@ const Slider = () => {
                     {item.desc}
                   </p>
                   <a
+                   aria-label="Participation"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform"
                     className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
                   >
@@ -171,12 +172,14 @@ const Slider = () => {
         {/* Prev / Next (o‘ng tomonda) */}
         <div className="flex gap-4">
           <button
+           aria-label="Prev"
             onClick={prev}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#FFB21A] hover:border-[#FFB21A] hover:text-white transition-all duration-300"
           >
             <ChevronLeft size={20} />
           </button>
           <button
+           aria-label="Next"
             onClick={next}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#FFB21A] hover:border-[#FFB21A] hover:text-white transition-all duration-300"
           >

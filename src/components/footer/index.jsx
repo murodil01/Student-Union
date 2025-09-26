@@ -67,24 +67,28 @@ const Footer = () => {
               <h3 className=" text-[18px] font-[700]">Ijtimoiy tarmoqlar</h3>
               <div className="flex gap-3 flex-wrap">
                 <a
+                  aria-label="Telegram"
                   className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="https://t.me/+NfuwV4a6Lzg2OTg6"
                 >
                   <FaTelegram size={20} />
                 </a>
                 <a
+                  aria-label="Instagram"
                   className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="https://www.instagram.com/tuitstudentsunion?igsh=dmt4MHl2bjE1YjRu"
                 >
                   <FaInstagram size={20} />
                 </a>
                 <a
+                  aria-label="Linkedin"
                   className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="https://www.linkedin.com/in/"
                 >
                   <IoLogoLinkedin size={20} />
                 </a>
                 <a
+                  aria-label="Facebook"
                   className="text-white hover:text-[#916802]  cursor-pointer hover:border-2 border-2 border-[#916802] hover:border[#916802] hover:bg-white bg-[#916802] rounded-[6px] p-3 flex items-center justify-center"
                   href="https://www.facebook.com/"
                 >
@@ -99,7 +103,7 @@ const Footer = () => {
       {/* Bottom */}
       <div className="bg-[#916802] footer-bottom  py-[14px]">
         <h3 className="text-center text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] text-[#FFFFFF] font-[400] px-2">
-         © 2025 TATU Talabalar Ittifoqi.
+          © 2025 TATU Talabalar Ittifoqi.
         </h3>
       </div>
     </>

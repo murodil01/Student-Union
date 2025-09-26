@@ -160,6 +160,7 @@ const Navbar = () => {
             >
               {/* Phone */}
               <a
+                aria-label="Phone"
                 className="flex items-center gap-[8px] text-[16px] md:text-[18px] font-normal"
                 href="tel:+998908086383"
               >
@@ -175,6 +176,7 @@ const Navbar = () => {
 
               {/* Location */}
               <a
+               aria-label="Location"
                 className="cursor-pointer"
                 href="https://www.google.com/maps/place/Tashkent+University+of+Information+Technologies/@41.3409302,69.2867291,17z/data=!4m6!3m5!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!8m2!3d41.3409302!4d69.2867291!16s%2Fm%2F02x8vhy?entry=tts&g_ep=EgoyMDI1MDUxMy4xIPu8ASoASAFQAw%3D%3D&skid=7fad99e4-6c88-4f5e-95c5-6636cb65a97d"
               >
@@ -211,6 +213,7 @@ const Navbar = () => {
 
               {/* Button (desktop only) */}
               <Link
+               aria-label="Contact"
                 to={"/participate"}
                 className="hidden shadow-inner transition hover:scale-105 md:block text-[14px] md:text-[16px] font-[600] py-[8px] md:py-[12px] px-[30px] md:px-[50px] rounded-[24px] boglan bg-[#F7F7F7] border border-[#EFEFEF]"
               >

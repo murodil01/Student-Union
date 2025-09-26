@@ -134,13 +134,14 @@ const About = () => {
 
           {/* Button */}
           <button
+           aria-label="Konstitutsiya"
             onClick={() =>
               window.open(
                 "/files/Toshkent_Axborot_Texnologiyalari_Universiteti_Talabalar_Ittifoqi.pdf",
                 "_blank"
               )
             }
-            className="text-[clamp(14px,2vw,16px)] mt-7 mx-auto flex items-center gap-3 font-medium max-w-[270px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
+            className="cursor-pointer text-[clamp(14px,2vw,16px)] mt-7 mx-auto flex items-center gap-3 font-medium max-w-[270px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
           >
             Konstitutsiyani o‘qish <MoveRight size={20} />
           </button>
