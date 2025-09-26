@@ -10,18 +10,16 @@ import threePeople from "../../assets/threePeople.jpg";
 import vaucher from "../../assets/vaucher.jpg";
 import xivaThree from "../../assets/xivaThree.jpg";
 import china from "../../assets/china.jpg";
-
 import { Image } from "antd";
 
 const Vacation = () => {
   return (
-    <div className="max-w-[1220px] mx-auto px-4 py-[32px] sm:py-[48px] md:py-[64px]  lg:py-[80px] text-center">
+    <div className="max-w-[1220px] mx-auto px-4 py-[32px] sm:py-[48px] md:py-[64px] lg:py-[80px] text-center">
       <h3 className="text-[20px] md:text-5xl font-bold leading-snug">
         Tadbirlar va Sayohatlar
       </h3>
-
       <p className="text-base md:text-lg font-normal max-w-[600px] mx-auto mt-4">
-        Har bir kun – yangi sarguzasht, yangi do‘stlik va unutilmas lahzalar.
+        Har bir kun – yangi sarguzasht, yangi do'stlik va unutilmas lahzalar.
       </p>
 
       {/* Grid */}
@@ -46,12 +44,19 @@ const Vacation = () => {
             xivaThree,
             china,
           ].map((src, index) => (
-            <Image
+            <div
               key={index}
-              src={src}
-              alt={`Image ${index + 1}`}
-              className="w-full aspect-square object-cover transition-transform duration-500 ease-in-out hover:scale-105"
-            />
+              className="relative overflow-hidden rounded-lg aspect-square cursor-pointer"
+            >
+              <Image
+                src={src}
+                alt={`Tadbir va sayohat rasmi ${index + 1}`}
+                className="w-full h-full aspect-square object-cover transition-transform duration-700 ease-out hover:scale-150"
+                preview={{
+                  mask: false, // Hover da preview mask ko'rinmasin
+                }}
+              />
+            </div>
           ))}
         </Image.PreviewGroup>
       </div>

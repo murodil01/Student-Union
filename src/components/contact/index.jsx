@@ -1,5 +1,5 @@
 import contact from "../../assets/contact.png";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div
@@ -8,7 +8,7 @@ const Hero = () => {
         backgroundImage: `url(${contact})`,
         backgroundOrigin: "content-box",
         backgroundSize: "contain",
-        maxWidth: "750px",
+        maxWidth: "1400px",
         margin: "0 auto",
       }}
     >
@@ -27,10 +27,16 @@ const Hero = () => {
         </p>
 
         <div className="flex items-center gap-[20px]">
-          <Link to={"/participate"} className="w-full sm:w-[180px] text-[16px] font-medium px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105">
+          <Link
+            to={"/participate"}
+            className="w-full sm:w-[180px] text-[16px] font-medium px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
+          >
             Bog’laning
           </Link>
-          <a href="mailto:info@su-tuit.uz" className="w-full sm:w-[180px] text-[16px] font-medium text-[#323232] px-8 py-3 rounded-[24px] border border-[#323232] bg-white shadow-inner transition hover:scale-105">
+          <a
+            href="mailto:info@su-tuit.uz"
+            className="w-full sm:w-[180px] text-[16px] font-medium text-[#323232] px-8 py-3 rounded-[24px] border border-[#323232] bg-white shadow-inner transition hover:scale-105"
+          >
             Pochta
           </a>
         </div>
