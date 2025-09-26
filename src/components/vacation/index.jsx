@@ -14,7 +14,7 @@ import { Image } from "antd";
 
 const Vacation = () => {
   return (
-    <div className="max-w-[1220px] mx-auto px-4 py-[32px] sm:py-[48px] md:py-[64px] lg:py-[80px] text-center">
+    <div id="vacation" className="max-w-[1220px] mx-auto px-4 py-[32px] sm:py-[48px] md:py-[64px] lg:py-[80px] text-center">
       <h3 className="text-[20px] md:text-5xl font-bold leading-snug">
         Tadbirlar va Sayohatlar
       </h3>

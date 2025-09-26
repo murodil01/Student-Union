@@ -69,8 +69,23 @@ const ParticipateHero = () => {
   return (
     <div className="max-w-[1220px] mx-auto pt-10 pb-40 px-4 mt-[60px] sm:mt-[100px] md:mt-[150px] lg:mt-[200px]">
       <div className="grid lg:grid-cols-2 gap-12 items-center p-8 border border-[#EFEFEF] rounded-[7px]">
+        {/* Image Section */}
+        <div className="relative order-1 lg:order-2">
+          <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
+            <img
+              src={boglanish}
+              alt="Hands holding smartphone"
+              className="w-full h-full object-cover "
+            />
+          </div>
+
+          {/* Floating elements for visual interest */}
+          <div className="absolute -top-6 -right-6 w-24 h-24 bg-orange-500 rounded-full opacity-20 blur-xl"></div>
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
+        </div>
+
         {/* Form Section */}
-        <div className="p-4 sm:p-6 md:p-8">
+        <div className="p-4 sm:p-6 md:p-8  order-2 lg:order-1">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
             A'zolik va Faollik
           </h3>
@@ -182,21 +197,6 @@ const ParticipateHero = () => {
               Yuborish
             </button>
           </form>
-        </div>
-
-        {/* Image Section */}
-        <div className="relative">
-          <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
-            <img
-              src={boglanish}
-              alt="Hands holding smartphone"
-              className="w-full h-full object-cover "
-            />
-          </div>
-
-          {/* Floating elements for visual interest */}
-          <div className="absolute -top-6 -right-6 w-24 h-24 bg-orange-500 rounded-full opacity-20 blur-xl"></div>
-          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
         </div>
       </div>
     </div>

@@ -33,17 +33,17 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row md:flex-nowrap gap-8 md:gap-[40px] lg:gap-[70px] w-full">
             {/* Home Links */}
             <div className="flex flex-col gap-2 text-left ">
-              <h3 className=" text-[18px] font-[700]">Home</h3>
-              <a className=" text-[16px]" href="#">
+              <h3 className="text-[18px] font-[700]">Home</h3>
+              <a className=" text-[16px]" href="#about">
                 Biz haqimizda
               </a>
-              <a className=" text-[16px]" href="#">
+              <a className=" text-[16px]" href="#service">
                 Bizning klublarimiz
               </a>
-              <a className=" text-[16px]" href="#">
+              <a className=" text-[16px]" href="#vacation">
                 Bizning tadbirlarimiz
               </a>
-              <a className=" text-[16px]" href="#">
+              <a className=" text-[16px]" href="#faq">
                 Ko’p uchraydigan savollar
               </a>
             </div>
