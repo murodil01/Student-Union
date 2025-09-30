@@ -10,6 +10,7 @@ import practica from "../../assets/practica.jpg";
 import sport from "../../assets/sport.jpg";
 import cyber from "../../assets/cyber.jpg";
 import robotics from "../../assets/robotics.jpg";
+import { Link } from "react-router-dom"
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -148,13 +149,12 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  <a
+                  <Link to={"/cyber-sport"}
                    aria-label="Participation"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform"
                     className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
                   >
                     {item.btn}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
