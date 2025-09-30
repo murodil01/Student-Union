@@ -1,4 +1,4 @@
-import fourPeople from "../../assets/fourPeople.jpg";
+import group_leaders from "../../assets/group_leaders.jpg";
 import fozilChes from "../../assets/fozilChes.jpg";
 import japaDiplom from "../../assets/japaDiplom.jpg";
 import japanIskandar from "../../assets/japanIskandar.jpg";
@@ -31,7 +31,7 @@ const Vacation = () => {
           }}
         >
           {[
-            fourPeople,
+            group_leaders,
             threePeople,
             vaucher,
             japanTogether,
