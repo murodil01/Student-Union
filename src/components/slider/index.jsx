@@ -10,7 +10,7 @@ import practica from "../../assets/practica.jpg";
 import sport from "../../assets/sport.jpg";
 import cyber from "../../assets/cyber.jpg";
 import robotics from "../../assets/robotics.jpg";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"; // qo'shib qo'yish kerak
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,60 +23,70 @@ const Slider = () => {
       title: "Sport klubi",
       desc: "Sog‘lom tana — sog‘lom aql! Sport musobaqalari, jismoniy faollik va jamoaviy ruh orqali hayotingizga energiya qo‘shing.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: robotics,
       title: "Robototexnika Klubi",
       desc: "G‘oyalaringizni harakatga keltiring! Texnologiya va muhandislikka qiziqqanlar uchun ilg‘or loyihalar, musobaqalar va yaratuvchanlik markazi.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: coding,
       title: "Dasturlash Klubi",
       desc: "Kodni o‘rgan, kelajakni yaratsang! Yangi texnologiyalar, algoritmlar va dasturlash tillarini o‘rganib, IT olamida o‘zingizni toping.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: holiday,
       title: "Sayohat Klubi",
       desc: "O‘zingizni kashf qilish yo‘lda boshlanadi.Tabiat qo‘ynida sayohatlar, yangi joylar va unutilmas sarguzashtlar sizni kutmoqda.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: cyber,
       title: "Cyber Sport Klubi",
       desc: "O‘yin orqali g‘alabaga! E-sport musobaqalari, strategiya va jamoaviy o‘yinlar orqali raqamli dunyoda chempion bo‘ling.",
       btn: "A’zo bo’lish",
+      link: "cyber-sport",
     },
     {
       img: practica,
       title: "Amaliy Ishlash va Loyiha Yaratish Klubi",
       desc: "G‘oyadan natijaga! Real loyihalar, startaplar va innovatsion yechimlar ustida ishlash uchun imkoniyat maydoni.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: paint,
       title: "Dizayn va San’at Klubi",
       desc: "Ijodingizga rang qo‘shing! Grafik dizayn, rasm, video montaj va san’at orqali o‘zingizni ifoda eting.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: debate,
       title: "Kitobxonlik va Munozara Klubi",
       desc: "So‘z kuchi – fikr erkinligi. Kitoblar muhokamasi, debatlar va intellektual o‘sish uchun maydon.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: music,
       title: "Musiqa va Drama Klubi",
       desc: "Ijod va sahna sizni kutmoqda! Qo‘shiq, teatr va chiqishlar orqali iste’dodingizni namoyon eting.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
     {
       img: leadership,
       title: "Liderlik va Tadbirkorlik Klubi",
       desc: "Kelajak liderlari bu yerda shakllanadi. Shaxsiy rivojlanish, biznes g‘oyalar va boshqaruv ko‘nikmalarini rivojlantiring.",
       btn: "A’zo bo’lish",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
     },
   ];
 
@@ -112,9 +122,7 @@ const Slider = () => {
       id="service"
       className="max-w-[1220px] mx-auto px-4 py-[100px] text-center"
     >
-      <h3
-        className="text-3xl sm:text-4xl md:text-[60px] lg:text-[64px] font-bold"
-      >
+      <h3 className="text-3xl sm:text-4xl md:text-[60px] lg:text-[64px] font-bold">
         Bizning Klublarimiz
       </h3>
       <p className="text-base md:text-[20px] font-normal  max-w-[540px] my-[15px] mx-auto text-center">
@@ -149,12 +157,23 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  <Link to={"/cyber-sport"}
-                   aria-label="Participation"
-                    className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
-                  >
-                    {item.btn}
-                  </Link>
+                  {item.link === "cyber-sport" ? (
+                    <Link
+                      to="/cyber-sport"
+                      className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
+                    >
+                      {item.btn}
+                    </Link>
+                  ) : (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
+                    >
+                      {item.btn}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -172,14 +191,14 @@ const Slider = () => {
         {/* Prev / Next (o‘ng tomonda) */}
         <div className="flex gap-4">
           <button
-           aria-label="Prev"
+            aria-label="Prev"
             onClick={prev}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#FFB21A] hover:border-[#FFB21A] hover:text-white transition-all duration-300"
           >
             <ChevronLeft size={20} />
           </button>
           <button
-           aria-label="Next"
+            aria-label="Next"
             onClick={next}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#FFB21A] hover:border-[#FFB21A] hover:text-white transition-all duration-300"
           >

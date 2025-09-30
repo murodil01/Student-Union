@@ -49,3 +49,13 @@ html.dark .boglan {
   background-color: #ffb21a;
   border-color: #ffb21a;
 }
+
+html.dark .cyber-qualification {
+  background: linear-gradient(
+    135deg,          
+    #533c01 0%,      
+    #0d0d0d 20%,     
+    #0d0d0d 80%,     
+    #533c01 100%     
+  ) !important;
+}
