@@ -49,7 +49,7 @@ const CyberGames = () => {
         {cyber.map((item) => (
           <div
             key={item.id}
-            className="bg-[#FAFAFA] border border-[#DDD] rounded-[16px] p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition w-full max-w-[400px]"
+            className="games-card bg-[#FAFAFA] border border-[#DDD] rounded-[16px] p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition w-full max-w-[400px]"
           >
             <img
               src={item.image}
@@ -57,7 +57,7 @@ const CyberGames = () => {
               className="w-full h-[250px] object-contain rounded-[12px] mb-[70px]"
             />
             <button
-              className="relative w-full px-6 py-2 rounded-[8px] font-medium transition border border-[rgba(209,213,219,0.80)] backdrop-blur-md"
+              className="games-btn relative text-[18px] w-full px-6 py-[16px] rounded-[8px] font-normal transition border border-[rgba(209,213,219,0.80)] backdrop-blur-md"
               style={{
                 background:
                   "linear-gradient(270deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 178, 26, 0.08) 25%, rgba(198, 168, 107, 0.12) 37.5%, rgba(199, 166, 102, 0.08) 50%, rgba(255, 255, 255, 0.01) 100%)",

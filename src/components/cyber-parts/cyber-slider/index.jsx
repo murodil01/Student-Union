@@ -72,7 +72,10 @@ export default function CyberSlider({ images = [], speed = 20 }) {
         }}
       >
         {track.map((src, i) => (
-          <div className="cyber-slider__item" key={`${src}-${i}`}>
+          <div
+            className="cyber-slider__item border border-[#D1D5DB] p-2 rounded-[8px]"
+            key={`${src}-${i}`}
+          >
             <img className="cyber-slider__img" src={src} alt={`slide-${i}`} />
           </div>
         ))}

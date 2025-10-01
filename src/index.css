@@ -52,10 +52,25 @@ html.dark .boglan {
 
 html.dark .cyber-qualification {
   background: linear-gradient(
-    135deg,          
-    #533c01 0%,      
-    #0d0d0d 20%,     
-    #0d0d0d 80%,     
-    #533c01 100%     
+    135deg,
+    #533c01 0%,
+    #0d0d0d 20%,
+    #0d0d0d 80%,
+    #533c01 100%
   ) !important;
+}
+
+html.dark .games-card {
+  background: #000000 !important;
+}
+
+html.dark .games-btn {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.01) 0%,
+    rgba(255, 178, 26, 0.08) 25%,
+    rgba(198, 168, 107, 0.12) 37.5%,
+    rgba(199, 166, 102, 0.08) 50%,
+    rgba(255, 255, 255, 0.01) 100%
+  ) ;
 }

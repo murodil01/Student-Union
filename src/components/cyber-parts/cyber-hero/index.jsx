@@ -2,7 +2,7 @@ import React from "react";
 
 const CyberHero = () => {
   return (
-    <div className="max-w-[1220px] mx-auto pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[210px] pb-[80px] px-4 text-center flex flex-col justify-center items-center gap-[30px]">
+    <div className="max-w-[1220px] mx-auto pt-[120px] sm:pt-[150px] md:pt-[200px] lg:pt-[250px] pb-[50px] px-4 text-center flex flex-col justify-center items-center gap-[30px]">
       <h3 className="font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-[72px]">Cyber Sport Klubi</h3>
       <p className="font-[400] text-base md:text-[20px] max-w-[750px]">
         Raqamli jang maydoni, bu yerda strategiya, tezkorlik va jamoaviy ruh
