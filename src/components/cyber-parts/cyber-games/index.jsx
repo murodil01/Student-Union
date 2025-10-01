@@ -54,10 +54,10 @@ const CyberGames = () => {
             <img
               src={item.image}
               alt={item.button}
-              className="w-full h-[250px] object-contain rounded-[12px] mb-[70px]"
+              className="w-full h-[250px] object-contain"
             />
             <button
-              className="games-btn relative text-[18px] w-full px-6 py-[16px] rounded-[8px] font-normal transition border border-[rgba(209,213,219,0.80)] backdrop-blur-md"
+              className="games-btn cursor-pointer relative text-[18px] w-full px-6 py-[16px] rounded-[8px] font-[600] transition border border-[rgba(209,213,219,0.80)] backdrop-blur-md hover:border-[#FFB21A] hover:!bg-[#FFB21A] hover:!bg-none"
               style={{
                 background:
                   "linear-gradient(270deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 178, 26, 0.08) 25%, rgba(198, 168, 107, 0.12) 37.5%, rgba(199, 166, 102, 0.08) 50%, rgba(255, 255, 255, 0.01) 100%)",
