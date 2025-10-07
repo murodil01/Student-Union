@@ -18,14 +18,14 @@ const ReaderHero = () => {
         <a
           aria-label="Participate"
           href="https://t.me/+NfuwV4a6Lzg2OTg6"
-          className="mx-auto text-center lg:mx-0 text-sm sm:text-base md:text-[16px] font-[600] w-full max-w-[180px] sm:max-w-[210px] md:max-w-[250px] px-5 sm:px-8 py-2 sm:py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition-transform duration-300 hover:scale-105"
+          className="mx-auto text-center lg:mx-0 text-sm sm:text-base md:text-[16px] font-[600] w-full max-w-[180px] px-5 sm:px-8 py-2 sm:py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition-transform duration-300 hover:scale-105"
         >
           A'ZO BO'LISH
         </a>
       </div>
 
       {/* Image Section */}
-      <div className="flex justify-center">
+      <div className="flex justify-center transform transition-transform duration-300 hover:scale-105">
         <img
           src={reader_hero}
           alt="Girl"
