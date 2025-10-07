@@ -190,7 +190,7 @@ const Navbar = () => {
               {/* Dark Mode Toggle */}
               <button
                 onClick={toggleDarkMode}
-                className={`relative w-16 h-9 rounded-full p-1 transition-all duration-500 
+                className={`relative w-16 h-9 rounded-full p-1 transition-all duration-500 cursor-pointer
     ${
       isDark
         ? "bg-black border border-[#FFB21A]"

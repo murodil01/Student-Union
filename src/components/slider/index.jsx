@@ -72,7 +72,7 @@ const Slider = () => {
       title: "Kitobxonlik va Munozara Klubi",
       desc: "So‘z kuchi – fikr erkinligi. Kitoblar muhokamasi, debatlar va intellektual o‘sish uchun maydon.",
       btn: "A’zo bo’lish",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
+      link: "reader-habit",
     },
     {
       img: music,
@@ -157,9 +157,9 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  {item.link === "cyber-sport" ? (
+                  {item.link === "cyber-sport" || item.link === "read-habit" ? (
                     <Link
-                      to="/cyber-sport"
+                      to={`/${item.link}`}
                       className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
                     >
                       {item.btn}
