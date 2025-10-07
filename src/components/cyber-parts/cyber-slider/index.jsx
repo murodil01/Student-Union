@@ -1,81 +1,77 @@
-import React from "react";
+import slider1 from "../../../assets/game-slider/slider1.png";
+import slider2 from "../../../assets/game-slider/slider2.png";
+import slider3 from "../../../assets/game-slider/slider3.png";
+import slider4 from "../../../assets/game-slider/slider4.png";
+import slider5 from "../../../assets/game-slider/slider5.png";
 
-// CyberSlider.jsx
-// To'xtovsiz — continuous infinite image slider (only images).
-// Use: <CyberSlider images={[url1, url2, url3]} speed={20} />
-
-export default function CyberSlider({ images = [], speed = 20 }) {
-  // If no images provided, fallback to sample placeholders
-  const sample = [
-    "https://picsum.photos/id/1015/800/500",
-    "https://picsum.photos/id/1016/800/500",
-    "https://picsum.photos/id/1018/800/500",
-    "https://picsum.photos/id/1020/800/500",
-  ];
+export default function CyberSlider({ images = [], speed = 30 }) {
+  const sample = [slider1, slider2, slider3, slider4, slider5];
   const imgs = images.length ? images : sample;
+  const track = [...imgs, ...imgs]; // duplicated list for seamless infinite scroll
 
-  // We duplicate the list so the animation can loop seamlessly
-  const track = [...imgs, ...imgs];
-
-  // Inline CSS in a template string so this single-file component works out of the box
   const style = `
-    .cyber-slider { position: relative; overflow: hidden; width: 100%; }
-    .cyber-slider__track { 
-      display: flex; 
-      gap: 12px; 
-      align-items: center; 
-      will-change: transform;
-      /* animation duration controlled by --speed (seconds) */
-      animation: cyber-scroll linear infinite;
-    }
-    .cyber-slider__item { flex: 0 0 auto; }
-    .cyber-slider__img { 
-      display: block; 
+    .cyber-slider {
+      position: relative;
+      overflow: hidden;
       width: 100%;
-      max-width: 312px; 
-      height: auto; 
+      background: transparent;
+    }
+    .cyber-slider__track {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+      animation: scroll var(--speed) linear infinite;
+    }
+    .cyber-slider__item {
+      flex: 0 0 auto;
+    }
+    .cyber-slider__img {
+      display: block;
+      width: 100%;
+      max-width: 312px;
+      height: auto;
       aspect-ratio: 312 / 370;
-      object-fit: cover; 
-      border-radius: 8px; 
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      border: 1px solid #D1D5DB;
+    }
+    .cyber-slider__img:hover {
+      transform: scale(1.05);
     }
 
-    /* The keyframe moves the track left by exactly 50% (because we duplicated items) */
-    @keyframes cyber-scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+    @keyframes scroll {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
     }
 
-    /* Responsive sizes */
+    /* Responsive */
     @media (max-width: 640px) {
-      .cyber-slider__img { max-width: 200px; aspect-ratio: 312 / 370; }
+      .cyber-slider__img { max-width: 200px; }
     }
     @media (min-width: 641px) and (max-width: 1024px) {
-      .cyber-slider__img { max-width: 260px; aspect-ratio: 312 / 370; }
-    }
-    @media (min-width: 1025px) {
-      .cyber-slider__img { max-width: 312px; aspect-ratio: 312 / 370; }
+      .cyber-slider__img { max-width: 260px; }
     }
   `;
 
-  // Convert speed (pixels per second intuition) into animation duration.
-  const animationDuration = `${speed}s`;
+  const duration = `${speed}s`;
 
   return (
-    <div className="cyber-slider" style={{ "--speed": animationDuration }}>
+    <div className="cyber-slider" style={{ "--speed": duration }}>
       <style>{style}</style>
 
       <div
         className="cyber-slider__track py-[100px]"
         style={{
-          // set animation duration using the provided speed
-          animationDuration,
+          animationDuration: duration,
         }}
       >
         {track.map((src, i) => (
-          <div
-            className="cyber-slider__item border border-[#D1D5DB] p-2 rounded-[8px]"
-            key={`${src}-${i}`}
-          >
+          <div className="cyber-slider__item rounded-[8px]" key={`${src}-${i}`}>
             <img className="cyber-slider__img" src={src} alt={`slide-${i}`} />
           </div>
         ))}

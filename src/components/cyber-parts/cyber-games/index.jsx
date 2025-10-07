@@ -45,11 +45,11 @@ const CyberGames = () => {
       </p>
 
       {/* Cards container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 place-items-center">
+      <div className="flex flex-wrap justify-center gap-6 mt-10">
         {cyber.map((item) => (
           <div
             key={item.id}
-            className="games-card bg-[#FAFAFA] border border-[#DDD] rounded-[16px] p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition w-full max-w-[400px]"
+            className="games-card bg-[#FAFAFA] border border-[#DDD] rounded-[16px] p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition w-full sm:w-[300px] md:w-[350px] lg:w-[380px]"
           >
             <img
               src={item.image}

@@ -1,4 +1,3 @@
-import { Calendar } from "lucide-react";
 import Qualification from "../../../assets/Qualification.png";
 
 const CyberQualification = () => {
@@ -8,36 +7,19 @@ const CyberQualification = () => {
         {/* Left text section */}
         <div className="flex-1 text-center md:text-left space-y-4">
           <h3 className="text-2xl font-bold ">Cyber Sport Saralash Tartibi</h3>
-          <p className=" leading-relaxed max-w-[500px] mx-auto md:mx-0">
+          <p className=" leading-relaxed ">
             Hozir turnirlar avjida! Kibersport olamidagi eng qizg‘in janglar
-            davom etmoqda. Sizni ham turnirga taklif qilamiz — raqobatni biz
-            bilan birga his eting!
+            davom <br /> etmoqda. Sizni ham turnirga taklif qilamiz — raqobatni
+            biz bilan birga his eting!
           </p>
-
-          <div className="space-y-3">
-            <div>
-              <h4 className="font-semibold text-lg ">Dota 2</h4>
-              <p className="flex items-center justify-center md:justify-start gap-2 ">
-                <Calendar size={20} className="text-[#FFB21A]" />
-                12.09.2025 – 12.10.2025
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg ">Counter-Strike 2</h4>
-              <p className="flex items-center justify-center md:justify-start gap-2 ">
-                <Calendar size={20} className="text-[#FFB21A]" />
-                25.10.2025 – 10.10.2025
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Image */}
-        <div className="flex-1 flex justify-center">
+        <div className=" flex justify-center">
           <img
             src={Qualification}
             alt="Qualification"
-            className="w-full max-w-[400px] object-contain"
+            className="w-full max-w-[240px]  h-[250px]"
           />
         </div>
 
