@@ -23,7 +23,7 @@ const Slider = () => {
       title: "Sport klubi",
       desc: "Sog‘lom tana — sog‘lom aql! Sport musobaqalari, jismoniy faollik va jamoaviy ruh orqali hayotingizga energiya qo‘shing.",
       btn: "A’zo bo’lish",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
+      link: "sport",
     },
     {
       img: robotics,
@@ -157,7 +157,7 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  {item.link === "cyber-sport" || item.link === "read-habit" ? (
+                  {item.link === "cyber-sport" || item.link === "read-habit" || item.link === "sport" ? (
                     <Link
                       to={`/${item.link}`}
                       className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"
