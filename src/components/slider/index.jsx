@@ -37,14 +37,14 @@ const Slider = () => {
       title: "Dasturlash Klubi",
       desc: "Kodni o‘rgan, kelajakni yaratsang! Yangi texnologiyalar, algoritmlar va dasturlash tillarini o‘rganib, IT olamida o‘zingizni toping.",
       btn: "A’zo bo’lish",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
+      link: "coding",
     },
     {
       img: holiday,
       title: "Sayohat Klubi",
       desc: "O‘zingizni kashf qilish yo‘lda boshlanadi.Tabiat qo‘ynida sayohatlar, yangi joylar va unutilmas sarguzashtlar sizni kutmoqda.",
       btn: "A’zo bo’lish",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOEYSftzCVuKiYvVKf4KYRMs6MJ_MQEab860XE0Pb-mlnq_Q/viewform",
+      link: "entertainment",
     },
     {
       img: cyber,
@@ -157,7 +157,11 @@ const Slider = () => {
                   <p className=" text-[18px] font-[400] mt-[8px] flex-1">
                     {item.desc}
                   </p>
-                  {item.link === "cyber-sport" || item.link === "read-habit" || item.link === "sport" ? (
+                  {item.link === "cyber-sport" ||
+                  item.link === "reader-habit" ||
+                  item.link === "sport" ||
+                  item.link === "entertainment" ||
+                  item.link === "coding" ? (
                     <Link
                       to={`/${item.link}`}
                       className="mt-[16px] text-center px-6 py-[12px] shadow-inner bg-[#F7F7F7] border border-[#F7F7F7] text-[#323232] text-[16px] font-[600] rounded-[24px] hover:bg-[#FFB21A] hover:border-[#FFB21A] transition cursor-pointer w-full"

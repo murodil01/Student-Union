@@ -10,8 +10,18 @@ const ReaderLinks = () => {
   };
 
   return (
-    <div className="bg-[#f6f6f6] max-w-[1220px] my-[25px] mx-auto flex gap-5 flex-col md:flex-row items-center justify-between rounded-2xl px-6 md:px-10 pt-10 overflow-hidden">
+    <div className="cyber-qualification bg-[#f6f6f6] max-w-[1220px] my-[25px] mx-auto flex gap-5 flex-col-reverse md:flex-row items-center justify-between rounded-2xl px-6 md:px-10 pt-10 overflow-hidden">
       {/* Chap tomonda matn va input */}
+      <div className="flex justify-center md:justify-start w-full md:w-1/2 relative">
+        <img
+          loading="lazy"
+          src={sunnat}
+          alt="Javlonbek"
+          className="w-[240px] md:w-[300px] h-auto object-contain md:mr-4 transition-transform duration-500 hover:scale-105 drop-shadow-lg"
+        />
+      </div>
+
+      {/* O‘ng tomonda rasm */}
       <div className="text-center md:text-left space-y-6 md:space-y-8 w-full md:w-1/2 mt-8 md:mt-0 uppercase">
         <h3 className="text-4xl md:text-[60px] font-bold leading-tight">
           <span className="text-[#3C3C3C] uppercase block">Sunnat</span>
@@ -36,18 +46,8 @@ const ReaderLinks = () => {
           </button>
         </div>
       </div>
-
-      {/* O‘ng tomonda rasm */}
-      <div className="flex justify-center md:justify-end w-full md:w-1/2 relative">
-        <img
-        loading="lazy"
-          src={sunnat}
-          alt="Javlonbek"
-          className="w-[240px] md:w-[300px] h-auto object-contain md:mr-4 transition-transform duration-500 hover:scale-105 drop-shadow-lg"
-        />
-      </div>
     </div>
   );
 };
 
-export default ReaderLinks
+export default ReaderLinks;
