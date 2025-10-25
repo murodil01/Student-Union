@@ -40,7 +40,7 @@ const CyberLink = () => {
       {/* O‘ng tomonda rasm */}
       <div className="flex justify-center md:justify-end w-full md:w-1/2 relative">
         <img
-        loading="lazy"
+          loading="lazy"
           src={javlon}
           alt="Javlonbek"
           className="w-[240px] md:w-[300px] h-auto object-contain md:mr-4 transition-transform duration-500 hover:scale-105 drop-shadow-lg"

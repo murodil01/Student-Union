@@ -137,6 +137,7 @@ const Navbar = () => {
               className="hidden md:block transition-all duration-300"
             >
               <img
+                loading="lazy"
                 src={logo}
                 alt="Logo"
                 className="md:w-[65px] lg:w-[80px] h-auto object-contain"
@@ -176,7 +177,7 @@ const Navbar = () => {
 
               {/* Location */}
               <a
-               aria-label="Location"
+                aria-label="Location"
                 className="cursor-pointer"
                 href="https://www.google.com/maps/place/Tashkent+University+of+Information+Technologies/@41.3409302,69.2867291,17z/data=!4m6!3m5!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!8m2!3d41.3409302!4d69.2867291!16s%2Fm%2F02x8vhy?entry=tts&g_ep=EgoyMDI1MDUxMy4xIPu8ASoASAFQAw%3D%3D&skid=7fad99e4-6c88-4f5e-95c5-6636cb65a97d"
               >
@@ -213,7 +214,7 @@ const Navbar = () => {
 
               {/* Button (desktop only) */}
               <Link
-               aria-label="Contact"
+                aria-label="Contact"
                 to={"/participate"}
                 className="hidden shadow-inner transition hover:scale-105 md:block text-[14px] md:text-[16px] font-[600] py-[8px] md:py-[12px] px-[30px] md:px-[50px] rounded-[24px] boglan bg-[#F7F7F7] border border-[#EFEFEF]"
               >
@@ -222,6 +223,7 @@ const Navbar = () => {
 
               {/* Hamburger (only mobile) */}
               <button
+                aria-label="Hamburger"
                 className="md:hidden text-[#FFB21A] z-50"
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -246,6 +248,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
+                    aria-label="About"
                     onClick={() => scrollToSection("about")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
@@ -254,6 +257,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
+                    aria-label="Klublar"
                     onClick={() => scrollToSection("service")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
@@ -262,6 +266,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
+                    aria-label="Loyihalar"
                     onClick={() => scrollToSection("projects")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >
@@ -270,6 +275,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button
+                    aria-label="FAQ"
                     onClick={() => scrollToSection("faq")}
                     className="text-[18px] md:text-[24px] font-[400]  hover:text-[#FFB21A] transition-all duration-200 cursor-pointer bg-transparent border-none p-0"
                   >

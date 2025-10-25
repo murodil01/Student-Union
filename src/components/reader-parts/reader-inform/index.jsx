@@ -9,6 +9,7 @@ const ReaderInform = () => {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="border border-gray-300 rounded-xl p-2 shadow-sm hover:shadow-md transition-all duration-300 ">
             <img
+              loading="lazy"
               src={reader_inform}
               alt="Reader"
               className="w-full h-auto object-cover rounded-lg"

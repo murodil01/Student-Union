@@ -10,6 +10,7 @@ const Footer = () => {
           {/* Logo & Contact */}
           <div className="flex flex-col gap-4 max-w-[315px] w-full">
             <img
+              loading="lazy"
               className="w-[100px] sm:w-[120px] md:w-[132px] lg:w-[150px] h-auto object-contain"
               src={logo}
               alt="Logo"

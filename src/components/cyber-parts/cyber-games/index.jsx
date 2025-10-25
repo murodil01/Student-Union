@@ -52,6 +52,7 @@ const CyberGames = () => {
             className="games-card bg-[#FAFAFA] border border-[#DDD] rounded-[16px] p-4 flex flex-col items-center shadow-sm hover:shadow-lg transition w-full sm:w-[300px] md:w-[350px] lg:w-[380px]"
           >
             <img
+            loading="lazy"
               src={item.image}
               alt={item.button}
               className="w-full h-[250px] object-contain"

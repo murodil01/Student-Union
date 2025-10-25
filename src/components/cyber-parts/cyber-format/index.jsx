@@ -14,6 +14,7 @@ const CyberFormat = () => {
         {/* 1-chi rasm — eng oldinda */}
         <div className="relative z-30 w-[90%] sm:w-[80%] md:w-[480px] lg:w-[520px] transition-all duration-500 ease-in-out hover:scale-105 hover:z-50 hover:-translate-y-3">
           <img
+            loading="lazy"
             src={format1}
             alt="format1"
             className="w-full rounded-xl shadow-2xl"
@@ -23,6 +24,7 @@ const CyberFormat = () => {
         {/* 2-chi rasm — orqa tomonda */}
         <div className="relative md:mt-10 z-20 md:-ml-[20%] w-[90%] sm:w-[80%] md:w-[480px] lg:w-[520px] transition-all duration-500 ease-in-out hover:scale-105 hover:z-50 hover:-translate-y-3">
           <img
+            loading="lazy"
             src={format2}
             alt="format2"
             className="w-full rounded-xl shadow-2xl"
@@ -32,6 +34,7 @@ const CyberFormat = () => {
         {/* 3-chi rasm — eng orqada */}
         <div className="relative md:mt-30 mt-0 z-10 md:-ml-[20%] w-[90%] sm:w-[80%] md:w-[480px] lg:w-[520px] transition-all duration-500 ease-in-out hover:scale-105 hover:z-50 hover:-translate-y-3">
           <img
+            loading="lazy"
             src={format3}
             alt="format3"
             className="w-full rounded-xl shadow-2xl"

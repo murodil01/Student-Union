@@ -45,6 +45,7 @@ const EntertainmentHero = () => {
                   {/* Top Image */}
                   <div className="rounded-[180px] overflow-hidden w-[140px] sm:w-[180px] md:w-[200px] h-[190px] sm:h-[230px] md:h-[250px]">
                     <img
+                      loading="lazy"
                       src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop"
                       alt="Happy person"
                       className="w-full h-full object-cover"
@@ -54,6 +55,7 @@ const EntertainmentHero = () => {
                   {/* Bottom Image */}
                   <div className="rounded-t-[150px] overflow-hidden w-[140px] sm:w-[180px] md:w-[200px] h-[150px] sm:h-[190px] md:h-[210px]">
                     <img
+                      loading="lazy"
                       src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=300&fit=crop"
                       alt="Concert"
                       className="w-full h-full object-cover"
@@ -65,6 +67,7 @@ const EntertainmentHero = () => {
                 <div className="w-[140px] sm:w-[180px] md:w-[220px] relative">
                   <div className="bg-[#FFB21A] rounded-t-[150px] overflow-hidden aspect-[3/4]">
                     <img
+                      loading="lazy"
                       src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop"
                       alt="Person with microphone"
                       className="w-full h-full object-cover"

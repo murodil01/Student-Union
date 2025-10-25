@@ -146,6 +146,7 @@ const Slider = () => {
             >
               <div className="flex flex-col text-left p-6 h-full border border-[#D1D5DB] rounded-[14px]">
                 <img
+                  loading="lazy"
                   src={item.img}
                   alt={item.title}
                   className="w-full h-[262px] object-cover rounded-[7px]"

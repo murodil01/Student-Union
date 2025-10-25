@@ -73,6 +73,7 @@ const ParticipateHero = () => {
         <div className="relative order-1 lg:order-2">
           <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
             <img
+              loading="lazy"
               src={boglanish}
               alt="Hands holding smartphone"
               className="w-full h-full object-cover "

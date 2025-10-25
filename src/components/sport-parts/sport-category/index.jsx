@@ -20,6 +20,7 @@ const SportCategory = () => {
             </p>
           </div>
           <img
+            loading="lazy"
             src={soccer}
             alt="soccer"
             className="w-full h-auto rounded-[6px]"
@@ -29,6 +30,7 @@ const SportCategory = () => {
         {/* Basketball */}
         <div className="flex flex-col gap-6 items-center">
           <img
+            loading="lazy"
             src={basketball}
             alt="basketball"
             className="w-full h-[300px] sm:h-[220px] md:h-[235px] rounded-[6px]"
@@ -48,6 +50,7 @@ const SportCategory = () => {
             </p>
           </div>
           <img
+            loading="lazy"
             src={badmenton}
             alt="badminton"
             className="w-full h-auto rounded-[6px]"
@@ -57,6 +60,7 @@ const SportCategory = () => {
         {/* Table Tennis */}
         <div className="flex flex-col gap-6 items-center">
           <img
+            loading="lazy"
             src={ping_pong}
             alt="ping_pong"
             className="w-full h-[300px] sm:h-[220px] md:h-[235px] rounded-[6px]"

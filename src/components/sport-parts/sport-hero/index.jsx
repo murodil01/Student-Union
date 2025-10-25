@@ -27,6 +27,7 @@ const SportHero = () => {
         <div className="relative flex items-center justify-center">
           {/* Basketball player — markazda */}
           <img
+            loading="lazy"
             src={basketball_player}
             alt="Basketball Player"
             className="w-[90%] max-w-[500px] mx-auto relative z-10"
@@ -34,6 +35,7 @@ const SportHero = () => {
 
           {/* Upper small image */}
           <img
+            loading="lazy"
             src={football}
             alt="Football"
             className="absolute top-0 right-20 w-[180px] h-[120px] sm:w-[216px] sm:h-[152px] object-cover rounded shadow-md"
@@ -41,6 +43,7 @@ const SportHero = () => {
 
           {/* Lower small image */}
           <img
+            loading="lazy"
             src={bascet}
             alt="Basketball"
             className="absolute bottom-[40px] right-0 w-[150px] sm:w-[172px] h-auto shadow-md"

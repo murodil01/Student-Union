@@ -20,6 +20,7 @@ const CyberQualification = () => {
           {/* Image */}
           <div className="md:block hidden">
             <img
+              loading="lazy"
               src={Qualification}
               alt="Qualification"
               className="w-full max-w-[240px]  h-[250px]"

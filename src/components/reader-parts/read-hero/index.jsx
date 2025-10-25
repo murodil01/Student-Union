@@ -27,6 +27,7 @@ const ReaderHero = () => {
       {/* Image Section */}
       <div className="flex justify-center transform transition-transform duration-300 hover:scale-105">
         <img
+          loading="lazy"
           src={reader_hero}
           alt="Girl"
           className="max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[900px] w-full h-auto"

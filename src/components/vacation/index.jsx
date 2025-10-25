@@ -14,7 +14,10 @@ import { Image } from "antd";
 
 const Vacation = () => {
   return (
-    <div id="vacation" className="max-w-[1220px] mx-auto px-4 py-[32px] sm:py-[48px] md:py-[64px] lg:py-[80px] text-center">
+    <div
+      id="vacation"
+      className="max-w-[1220px] mx-auto px-4 py-[32px] sm:py-[48px] md:py-[64px] lg:py-[80px] text-center"
+    >
       <h3 className="text-[20px] md:text-5xl font-bold leading-snug">
         Tadbirlar va Sayohatlar
       </h3>
@@ -49,6 +52,7 @@ const Vacation = () => {
               className="relative overflow-hidden rounded-lg aspect-square cursor-pointer"
             >
               <Image
+                loading="lazy"
                 src={src}
                 alt={`Tadbir va sayohat rasmi ${index + 1}`}
                 className="w-full h-full aspect-square object-cover transition-transform duration-700 ease-out hover:scale-150"

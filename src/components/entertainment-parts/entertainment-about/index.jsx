@@ -1,5 +1,3 @@
-import React from "react";
-
 const EntertainmentAbout = () => {
   return (
     <div className="max-w-[1220px] mx-auto px-5 py-16">
@@ -14,6 +12,7 @@ const EntertainmentAbout = () => {
           {/* Large Image - Left */}
           <div className="row-span-2">
             <img
+              loading="lazy"
               src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=400&h=500&fit=crop"
               alt="Concert crowd"
               className="w-[174px] h-[220px] sm:w-[220px] sm:h-[260px] md:w-[250px] md:h-[290px] lg:w-[345px] lg:h-[400px] rounded-tl-[40px] sm:rounded-tl-[60px] md:rounded-tl-[70px] lg:rounded-tl-[80px]"
@@ -24,6 +23,7 @@ const EntertainmentAbout = () => {
             {/* Small Image - Top Right */}
             <div>
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=240&fit=crop"
                 alt="Window climbing"
                 className="w-[130px] h-[160px] sm:w-[1800px] sm:h-[200px] md:w-[200px] md:h-[250px] lg:w-[225px] lg:h-[290px] rounded-tl-[40px] sm:rounded-tl-[60px] md:rounded-tl-[70px] lg:rounded-tl-[80px]"
@@ -33,6 +33,7 @@ const EntertainmentAbout = () => {
             {/* Small Image - Bottom Right */}
             <div>
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=240&fit=crop"
                 alt="People dancing"
                 className="w-[180px] h-[180px] sm:w-[220px] sm:h-[260px] md:w-[250px] md:h-[290px] lg:w-[276px] lg:h-[307px] rounded-tl-[40px] sm:rounded-tl-[60px] md:rounded-tl-[70px] lg:rounded-tl-[80px]"
