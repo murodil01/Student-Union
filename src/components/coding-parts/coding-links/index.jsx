@@ -1,4 +1,4 @@
-import asadullo from "../../../assets/asadullo.png";
+import asadullo from "../../../assets/email-people/asadullo.png";
 import { GoArrowUpRight } from "react-icons/go";
 
 const CodingLinks = () => {

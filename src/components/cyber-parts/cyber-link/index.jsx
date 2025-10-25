@@ -1,4 +1,4 @@
-import javlon from "../../../assets/javlon.png";
+import javlon from "../../../assets/email-people/javlon.png";
 import { GoArrowUpRight } from "react-icons/go";
 
 const CyberLink = () => {

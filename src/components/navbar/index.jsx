@@ -127,6 +127,7 @@ const Navbar = () => {
               src={logo}
               alt="Logo"
               className="w-[55px] sm:w-[60px] h-auto object-contain"
+              fetchPriority="high"
             />
           </Link>
 

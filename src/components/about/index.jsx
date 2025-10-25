@@ -76,13 +76,13 @@
 // export default About;
 
 import { MoveRight } from "lucide-react";
-import union from "../../assets/union.jpg";
+import union from "../../assets/union.webp";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="max-w-[1220px] mx-auto px-4 py-[10px] md:py-[100px] flex flex-col items-center gap-[16px]"
+      className="max-w-[1220px] mx-auto px-4 pb-[10px] md:pb-[100px] flex flex-col items-center gap-[16px]"
     >
       {/* Title */}
       <h2 className="text-3xl md:text-[60px] font-bold text-center">
@@ -97,34 +97,39 @@ const About = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] items-start w-full mt-10">
-        {/* LEFT SIDE IMAGE */}
         <img
           src={union}
           alt="Talabalar ittifoqi rasmi"
-          loading="lazy"
           width={630}
           height={400}
           className="w-[630px] rounded-[6px]"
+          loading="eager"
+          fetchPriority="high"
         />
 
         {/* RIGHT SIDE TEXT */}
         <div className="flex flex-col gap-[20px] text-left">
-          <h3 className="text-[24px] font-normal">Bizning asosiy vazifamiz :</h3>
+          <h3 className="text-[24px] font-normal">
+            Bizning asosiy vazifamiz :
+          </h3>
 
           <ul className="flex flex-col gap-[24px]">
             <li className="flex items-center gap-[20px] text-[16px] font-normal">
-              🎓 Manfaatlarni himoya qilish – har bir talabani qo‘llab-quvvatlash va uning
-              huquqlarini kafolatlash.
+              🎓 Manfaatlarni himoya qilish – har bir talabani
+              qo‘llab-quvvatlash va uning huquqlarini kafolatlash.
             </li>
             <li className="flex items-center gap-[20px] text-[16px] font-normal">
-              🎓 Yangi g‘oyalarni rivojlantirish – tashabbuslarni amaliy loyihalarga aylantirish.
+              🎓 Yangi g‘oyalarni rivojlantirish – tashabbuslarni amaliy
+              loyihalarga aylantirish.
             </li>
             <li className="flex items-center gap-[20px] text-[16px] font-normal">
-              🎓 Universitet hayotini boyitish – ilmiy, madaniy va sport faoliyatini yangi bosqichga ko‘tarish.
+              🎓 Universitet hayotini boyitish – ilmiy, madaniy va sport
+              faoliyatini yangi bosqichga ko‘tarish.
             </li>
             <li className="flex items-center gap-[20px] text-[16px] font-normal">
-              🎓 Xalqaro maydonga olib chiqish – talabalarning global imkoniyatlardan foydalanishini
-              ta’minlash va xalqaro hamkorliklarni kengaytirish.
+              🎓 Xalqaro maydonga olib chiqish – talabalarning global
+              imkoniyatlardan foydalanishini ta’minlash va xalqaro
+              hamkorliklarni kengaytirish.
             </li>
           </ul>
 
@@ -134,7 +139,7 @@ const About = () => {
 
           {/* Button */}
           <button
-           aria-label="Konstitutsiya"
+            aria-label="Konstitutsiya"
             onClick={() =>
               window.open(
                 "/files/Toshkent_Axborot_Texnologiyalari_Universiteti_Talabalar_Ittifoqi.pdf",

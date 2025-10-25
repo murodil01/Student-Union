@@ -1,4 +1,4 @@
-import shohjahon from "../../../assets/shohjahon.png";
+import shohjahon from "../../../assets/email-people/shohjahon.png";
 import { GoArrowUpRight } from "react-icons/go";
 
 const EntertainmentLinks = () => {

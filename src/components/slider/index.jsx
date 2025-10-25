@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Minus } from "lucide-react";
-import coding from "../../assets/coding.jpg";
-import debate from "../../assets/debate.jpg";
-import holiday from "../../assets/holiday.jpg";
-import leadership from "../../assets/leadership.jpg";
-import music from "../../assets/music.jpg";
-import paint from "../../assets/paint.jpg";
-import practica from "../../assets/practica.jpg";
-import sport from "../../assets/sport.jpg";
-import cyber from "../../assets/cyber.jpg";
-import robotics from "../../assets/robotics.jpg";
+import coding from "../../assets/carusel/coding.jpg";
+import debate from "../../assets/carusel/debate.jpg";
+import holiday from "../../assets/carusel/holiday.jpg";
+import leadership from "../../assets/carusel/leadership.jpg";
+import music from "../../assets/carusel/music.jpg";
+import paint from "../../assets/carusel/paint.jpg";
+import practica from "../../assets/carusel/practica.jpg";
+import sport from "../../assets/carusel/sport.jpg";
+import cyber from "../../assets/carusel/cyber.jpg";
+import robotics from "../../assets/carusel/robotics.jpg";
 import { Link } from "react-router-dom"; // qo'shib qo'yish kerak
 
 const Slider = () => {

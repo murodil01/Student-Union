@@ -1,4 +1,4 @@
-import sunnat from "../../../assets/sunnat.png";
+import sunnat from "../../../assets/email-people/sunnat.png";
 import { GoArrowUpRight } from "react-icons/go";
 
 const ReaderLinks = () => {

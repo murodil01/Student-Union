@@ -1,8 +1,8 @@
-import agroboost from "../../assets/agroboost.png";
-import foodquest from "../../assets/foodquest.png";
-import robocontest from "../../assets/robocontest.png";
-import freshline from "../../assets/freshline.png";
-import com from "../../assets/com.png";
+import agroboost from "../../assets/project-images/agroboost.png";
+import foodquest from "../../assets/project-images/foodquest.png";
+import robocontest from "../../assets/project-images/robocontest.png";
+import freshline from "../../assets/project-images/freshline.png";
+import com from "../../assets/project-images/com.png";
 
 const Project = () => {
   return (

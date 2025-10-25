@@ -1,7 +1,7 @@
-import ping_pong from "../../../assets/ping_pong.png";
-import badmenton from "../../../assets/badmenton.png";
-import soccer from "../../../assets/soccer.png";
-import basketball from "../../../assets/basketball.png";
+import ping_pong from "../../../assets/sport-category/ping_pong.png";
+import badmenton from "../../../assets/sport-category/badmenton.png";
+import soccer from "../../../assets/sport-category/soccer.png";
+import basketball from "../../../assets/sport-category/basketball.png";
 
 const SportCategory = () => {
   return (
