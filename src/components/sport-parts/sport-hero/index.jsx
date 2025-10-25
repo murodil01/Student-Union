@@ -1,6 +1,6 @@
 import bascet from "../../../assets/sport-hero/bascet.png";
 import basketball_player from "../../../assets/sport-hero/basketball_player.png";
-import basketball_sport from "../../../assets/sport-hero/basketball_sport.png";
+import ball from "../../../assets/sport-hero/ball.svg";
 import football from "../../../assets/sport-hero/football.png";
 
 const SportHero = () => {
@@ -12,7 +12,7 @@ const SportHero = () => {
           {/* Background image */}
           <div
             className="absolute inset-0 bg-no-repeat bg-contain bg-center"
-            style={{ backgroundImage: `url(${basketball_sport})` }}
+            style={{ backgroundImage: `url(${ball})` }}
           ></div>
 
           {/* Text on top of background */}

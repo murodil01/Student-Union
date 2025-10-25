@@ -10,7 +10,7 @@ const CyberLink = () => {
   };
 
   return (
-    <div className="cyber-qualification bg-[#f6f6f6] max-w-[1220px] my-[25px] mx-auto flex gap-5 flex-col md:flex-row items-center justify-between rounded-2xl px-6 md:px-10 pt-10 overflow-hidden">
+    <div className="cyber-qualification bg-[#f6f6f6] max-w-[1220px] mt-[200px] mb-[50px] mx-auto flex gap-5 flex-col md:flex-row items-center justify-between rounded-2xl px-6 md:px-10 pt-10 overflow-hidden">
       {/* Chap tomonda matn va input */}
       <div className="text-center md:text-left space-y-6 md:space-y-8 w-full md:w-1/2 mt-8 md:mt-0">
         <h3 className="text-4xl md:text-[60px] font-bold leading-tight uppercase">

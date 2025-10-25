@@ -10,7 +10,7 @@ const CodingLinks = () => {
   };
 
   return (
-    <div className="cyber-qualification bg-[#f6f6f6] max-w-[1220px] my-[25px] mx-auto flex gap-5 flex-col-reverse md:flex-row items-center justify-between rounded-2xl px-6 md:px-10 pt-10 overflow-hidden">
+    <div className="cyber-qualification bg-[#f6f6f6] max-w-[1220px] mt-[200px] mb-[50px] mx-auto flex gap-5 flex-col-reverse md:flex-row items-center justify-between rounded-2xl px-6 md:px-10 pt-10 overflow-hidden">
       {/* Chap tomonda matn va input */}
       <div className="flex justify-center md:justify-start w-full md:w-1/2 relative">
         <img
