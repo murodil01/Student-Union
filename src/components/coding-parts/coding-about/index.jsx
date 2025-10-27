@@ -3,9 +3,9 @@ import coding_about2 from "../../../assets/coding_about2.png";
 
 const CodingAbout = () => {
   return (
-    <div className="max-w-[1220px] mx-auto px-4 md:px-5 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-[45px] py-10">
+    <div className="max-w-[1220px] mx-auto px-4 md:px-5 flex flex-col-reverse justify-between md:flex-row items-center gap-8 md:gap-[45px] py-10">
       {/* Chap tomonda rasm */}
-      <div className="flex justify-center w-full md:w-1/2">
+      <div className="flex justify-center md:justify-start w-full md:w-1/2">
         <img
           className="w-full max-w-[500px] h-auto object-contain"
           src={coding_about}

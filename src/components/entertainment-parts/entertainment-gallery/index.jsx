@@ -1,4 +1,3 @@
-
 const EntertainmentGallery = () => {
   return (
     <div className="min-h-screen  py-16 px-4">
@@ -15,7 +14,7 @@ const EntertainmentGallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] auto-rows-[200px]">
           {/* Qator 1 */}
           {/* 1-rasm: Baland */}
           <div className="row-span-2 relative overflow-hidden rounded-2xl group cursor-pointer">

@@ -15,7 +15,7 @@ const SportGallery = () => {
         <h3 className="font-bold text-4xl md:text-5xl lg:text-[60px] mb-3">
           Galereya
         </h3>
-        <p className="font-medium text-base md:text-lg lg:text-[20px] text-gray-700">
+        <p className="font-medium text-base md:text-lg lg:text-[20px]">
           “Biz bilan birga o‘zingizni rivojlantiring – bu yerda bilim, ijod va
           imkoniyatlar birlashadi..
         </p>
@@ -27,13 +27,18 @@ const SportGallery = () => {
         <div className="flex flex-wrap justify-center gap-4">
           {[sports1, sports2, sports3, sports4, sports5, sports6].map(
             (img, idx) => (
-              <img
+              <div
                 key={idx}
-                className="rounded-[8px] w-[90%] sm:w-[384px] h-[300px]"
-                src={img}
-                alt={`Tadbir ${idx + 1}`}
-                loading="lazy"
-              />
+                className="group rounded-[8px] w-[90%] sm:w-[384px] h-[300px] overflow-hidden"
+                style={{ perspective: "800px" }}
+              >
+                <img
+                  src={img}
+                  alt={`Tadbir ${idx + 1}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out cursor-pointer group-hover:[transform:translateZ(60px)]"
+                />
+              </div>
             )
           )}
         </div>
@@ -41,13 +46,18 @@ const SportGallery = () => {
         {/* Second row: 585x252 */}
         <div className="flex flex-wrap justify-center gap-4">
           {[sports7, sports8].map((img, idx) => (
-            <img
+            <div
               key={idx}
-              className="rounded-[8px] w-[90%] sm:w-[585px] h-[300px]"
-              src={img}
-              alt={`Tadbir ${idx + 4}`}
-              loading="lazy"
-            />
+              className="group rounded-[8px] w-[90%] sm:w-[585px] h-[300px] overflow-hidden"
+              style={{ perspective: "800px" }}
+            >
+              <img
+                src={img}
+                alt={`Tadbir ${idx + 7}`}
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 ease-in-out cursor-pointer group-hover:[transform:translateZ(60px)]"
+              />
+            </div>
           ))}
         </div>
       </div>

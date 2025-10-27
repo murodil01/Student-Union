@@ -2,7 +2,7 @@ import Qualification from "../../../assets/Qualification.png";
 
 const CyberQualification = () => {
   return (
-    <div className="lg:px-40 px-0">
+    <div className="lg:px-40 px-4">
       <div className="cyber-qualification bg-[#f6f6f6] max-w-[1220px] px-6 md:py-0 py-10 mx-auto   rounded-[10px] my-[80px]">
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
           {/* Left text section */}
