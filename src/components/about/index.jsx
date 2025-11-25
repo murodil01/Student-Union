@@ -75,8 +75,9 @@
 
 // export default About;
 
-import { MoveRight } from "lucide-react";
+// import { MoveRight } from "lucide-react";
 import union from "../../assets/union.webp";
+import { FaTelegram } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -152,11 +153,11 @@ const About = () => {
           </button>  */}
 
           <a
-            href="https://t.me/SU_TUIT_Group"
+            href="https://t.me/SU_TUIT"
             aria-label="Konstitutsiya"
             className="cursor-pointer text-[clamp(14px,2vw,16px)] mt-7 mx-auto flex justify-center items-center gap-3 font-medium max-w-[270px] w-full px-8 py-3 rounded-[24px] bg-[#FFB21A] shadow-[0px_4px_8px_0px_#FCB62980] transition hover:scale-105"
           >
-            Enter <MoveRight size={20} />
+            Telegram <FaTelegram size={20} />
           </a>
         </div>
       </div>
