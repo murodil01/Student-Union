@@ -1,4 +1,5 @@
 import Navbar from "../../components/navbar";
+import Ramadan from "../../components/ramadan";
 import About from "../../components/about";
 import Hero from "../../components/hero";
 import Slider from "../../components/slider";
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+      <Ramadan />
       <Hero />
       <About />
       <Slider />
